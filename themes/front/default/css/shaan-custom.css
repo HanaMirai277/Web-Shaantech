@@ -34,3 +34,7 @@
     /*font-weight: 400;*/
     font-weight: bold;
 }
+
+main.layout-page {
+    padding-top: 75px;
+}
