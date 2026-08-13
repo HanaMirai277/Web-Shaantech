@@ -1,0 +1,635 @@
+/*!
+* PT. IMAJIKU CIPTA MEDIA
+* Copyright 2019-2020 IMAJIKU.
+*/
+
+
+/* Desktop First Design */
+
+/* Larger Devices, Wider Screens */
+@media only screen and (min-width : 1700px) {
+	
+}
+
+@media (min-width : 1500px) and (max-width: 1700px) {
+	
+}
+
+@media only screen and (min-width : 1367px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1200px) {
+
+	/*Banner*/
+	
+	.banner-box-career .banner-caption h2,
+	.banner-box-newsletter .banner-caption h2,
+	.banner-box-clip .banner-caption h1{
+		font-size: 40px;
+	}
+
+	.banner-box-contact .banner-caption h3,
+	.banner-box-career .banner-caption h2,
+	.philosophy-box p{
+		font-size: 20px;
+	}
+
+	.banner-box-clip .banner-caption h3 {
+		font-size: 40px;
+	}
+
+	.philosophy-box .title-main{
+		top: 0;
+	}
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width : 1024px) {
+	
+}
+
+@media only screen and (max-width : 1024px) {
+
+
+}
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Start mobile responsive */
+@media only screen and (max-width : 991px) {
+
+	.title-primary h1{
+		font-size: 24px;
+	}
+
+	/*Banner clip*/
+
+	.banner-box-clip {
+		height: 340px;
+	}
+
+	.banner-box-clip{
+		clip-path: ellipse(180% 95% at top);
+		-webkit-clip-path: ellipse(180% 95% at top);
+		-moz-clip-path: ellipse(180% 95% at top);
+	}
+
+	.banner-caption h3 {
+		font-size: 20px;
+	}
+
+	.banner-box-contact .banner-caption h3{
+		margin-bottom: 20px;
+	}
+
+	.banner-box-contact .title-main,
+	.philosophy-box .title-main{
+		top: 0;
+	}
+
+	.banner-box-clip .title-main:before{
+		display: none;
+	}
+
+	/*Banner font*/
+
+	.banner-box-newsletter .banner-caption h2,
+	.banner-box-career .banner-caption h2,
+	.banner-box-contact .banner-caption h3,
+	.philosophy-box p {
+		font-size: 16px;
+	}
+
+	.banner-box-clip .banner-caption h3 {
+		font-size: 20px;
+	}
+
+	.banner-box-clip .banner-caption .title-main-banner h1{
+		font-size: 16px;
+		font-weight: normal;
+		margin: 0;
+	}
+
+	.banner-box-clip .banner-caption h1{
+		font-size: 20px;
+		margin: 10px 0!important;
+		line-height: 1.5;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	.banner-box-clip .banner-caption{
+		text-align: left;
+	}
+
+	.banner-half{
+		height: 210px;
+	}
+
+	/*clients*/
+	.clients-img{
+		width: calc(100%/4 - 20px);
+	}
+
+	/*Case study*/
+
+	.case-studies-box {
+		margin: 20px 0;
+	}
+
+	.case-studies-box ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding-left: 0;
+	}
+
+	.casestudy-item{
+		width: 100%;
+		margin: 10px 0;
+		padding: 25px;
+	}
+
+	.casestudy-projectname{
+		font-size: 20px;
+	}
+
+	.casestudy-item:not(:first-child) {
+		margin-left: unset;
+	}
+
+	.casestudy-item:hover {
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+	}
+
+	.casestudy-item:hover ~ .casestudy-item{
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+		-moz-transform: translateX(0);
+	}
+
+	.case-studies-box:hover > article > ul > .casestudy-item .card-mjk-desc,
+	.case-studies-box:hover > article > ul > .casestudy-item .card-mjk-img {
+		opacity: 1;
+	}
+
+	.case-studies-box:hover > article > ul > .casestudy-item:hover .card-mjk-desc,
+	.case-studies-box:hover > article > ul > .casestudy-item:hover .card-mjk-img {
+		opacity: 1;
+	}
+
+	.casestudy-item .card-mjk-desc p{
+		min-height: unset;
+	}
+
+	.case-studies-box:hover > .casestudy-item .casestudy-data, 
+	.case-studies-box:hover > .casestudy-item .casestudy-img{
+		opacity: 1;
+	}
+
+	/*Background About*/
+
+	.bg-quotes {
+		height: 300px;
+		width: 100%;
+		position: relative;
+		background-size: cover;
+		left: 0;
+		top: 0;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	/*Banner*/
+
+
+	.half-section{
+		margin-top: calc(-60px - 10px);
+	}
+
+	.banner-box-career .banner-caption p{
+		text-align: center;
+	}
+
+	/* Project Detail */
+
+	.project-img-preview .fancybox {
+		display: block;
+	}
+
+	.project-img-preview.img-parallax {
+		height: auto!important;
+		background-image: unset!important;
+	}
+
+	/* Services */
+
+	.services-list ul {
+		justify-content: flex-start;
+	}
+
+	/* About */
+	.title-approach h3 {
+		font-size: 20px;
+	}
+
+	.achievement-box h5,
+	.achievement-box p,
+	.establishment-box h5,
+	.establishment-box p {
+		font-size: 14px;
+	}
+
+	.title-primary h2 {
+		font-size: 20px;
+	}
+	.title-main h2 {
+		font-size: 14px;
+		font-weight: bold;
+	}
+
+	.form-group-mjk label{
+		font-size: 14px;
+	}
+
+	.banner-box-clip .banner-caption p{
+		font-size: 14px;
+		display: -webkit-box;
+		-webkit-line-clamp: 4;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+	}
+
+	/*Card Project Testimony*/
+
+	.card-mjk.card-project-testimony,
+	.card-project-testimony .card-mjk-desc{
+		width: 100%;
+	}
+
+	.project-testimony-profile{
+		max-width: 100%;
+	}
+
+	.project-client-desc h5{
+		font-size: 14px;
+	}
+
+	.project-testimony-desc p{
+		font-size: 14px;
+	}
+
+	.profile-data p{
+		font-size: 14px;
+	}
+
+	.profile-img {
+		max-width: 70px;
+	}
+
+	/*Paddings*/
+
+	.pd-l-55 {
+		padding-left: 0px;
+	}
+
+	.pd-l-70 {
+		padding-left: 0px;
+	}
+
+	/*filter valuable project*/
+	.list-category{
+		flex-direction: column;
+	}
+	.filter-sort {
+		justify-content: flex-start!important;
+		margin-top: 10px!important;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.casestudy-item .card-mjk-desc {
+		width: 50%;
+	}
+
+	.casestudy-item .card-mjk-img {
+		width: 50%;
+		padding: 10px;
+	}
+
+	.casestudy-item {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.project-testimony-desc{
+		max-width: 80%;
+		margin: 0 auto;
+	}
+}
+
+/* Small Devices, Desktops */
+@media only screen and (max-width : 812px) {
+
+}
+
+@media only screen and (max-width : 768px) {
+	.career-desc {
+		margin-bottom: 8px;
+	}
+
+	/*Case studies*/
+
+	.casestudy-item .title-main {
+		margin-bottom: 0px!important;
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	.casestudy-action {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+	}
+
+	/*Scrolldown*/
+
+	.half-section{
+		margin-top: calc(-60px - 10px);
+	}
+
+	/*Slider testimoni*/
+
+	.testimony-caption{
+		width: 100%;
+	}
+
+	.testimony-slider-dots .slick-dots{
+		margin-left: 0;
+	}
+
+	.brands-img{
+		width: calc(100%/3);
+	}
+
+	.casestudy-item{
+		box-shadow: 0px 0px 20px 4px #e2e2e2;
+		-webkit-box-shadow: 0px 0px 20px 4px #e2e2e2;
+		-moz-box-shadow: 0px 0px 20px 4px #e2e2e2;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px) {
+
+
+	/*Case study*/
+
+	.casestudy-item{
+		width: 100%;
+	}
+
+	.terms-list ul {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		flex-flow: wrap;
+	}
+	.terms-list ul li {
+		width: 50%;
+	}
+
+	/*Breadcrumb*/
+
+	.breadcrumb-box.breadcrumb-shaan{
+		display: none;
+	}
+
+
+	.banner-box-career .banner-caption br {
+		display: none;
+	}
+
+	.banner-box-career .banner-caption h2 {
+		text-align: center;
+	}
+
+	.banner-box.banner-box-clip .banner-caption {
+		position: relative;
+		padding: 40px 0;
+	}
+
+	.banner-box.banner-box-clip > figure > img {
+		position: absolute;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	/*Brand circle logo*/
+	.brand-circle{
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+		float: unset;
+		max-width: 120px;
+		margin-bottom: calc(-60px - 50px);
+	}
+
+	.profile-action{
+		flex-direction: column;
+	}
+
+	.profile-action .btn{
+		width: auto;
+	}
+
+	.banner-box-contact .banner-caption {
+		position: relative;
+	}
+
+	.banner-box-contact > figure > img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+	}
+
+	.banner-box-contact .banner-caption {
+		padding: 40px 0;
+	}
+
+	.banner-box-contact .title-main,
+	.philosophy-box .title-main {
+		position: relative;
+		padding: 0;
+	}
+
+	.banner-box-contact .banner-caption h3,
+	.philosophy-box p{
+		text-indent: 0;
+	}
+
+	.banner-box-newsletter .banner-caption {
+		position: relative;
+	}
+
+	.banner-box-newsletter > figure > img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+	}
+
+	.banner-box-newsletter .banner-caption {
+		padding: 40px 0;
+	}
+
+	.banner-box-career .banner-caption {
+		position: relative;
+	}
+
+	.banner-box-career > figure > img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+	}
+
+	.banner-box-career .banner-caption {
+		padding: 40px 0;
+	}
+
+	.btn-tech{
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+	/*Services*/
+
+	.services-list ul{
+		justify-content: flex-start!important;
+	}
+
+	/*Golden circle box mobile*/
+	.golden-circle-box{
+		display: none;
+	}
+
+	.golden-circle-box-mobile{
+		display: block;
+	}
+
+	.casestudy-item .card-mjk-desc p{
+		margin-bottom: 0px;
+	}
+
+}
+
+@media only screen and (max-width : 640px) {
+
+}
+
+@media only screen and (max-width : 575px) {
+	.form-text-group .form-text-desc{
+		padding-left: 15px;
+	}
+
+	.clients-img{
+		width: calc(100%/3 - 20px);
+	}
+
+	.separator-img{
+		left: 50%;
+		right: unset;
+	}
+
+	.scrolldown-box{
+		display: none;
+	}
+
+	.half-section{
+		margin-top: -50px;
+	}
+
+	.whatsapp-box img{
+		width: 42px;
+		height: 42px;
+	}
+
+	.brands-img {
+		width: calc(100%/2);
+	}
+
+}
+
+@media only screen and (max-width : 480px) {
+	/*Banner Bottom*/
+
+	.banner-action-area{
+		flex-direction: column;
+	}
+
+	.services-list li {
+		width: 220px!important; 
+	}
+
+	/*Project*/
+
+	.project-testimony-desc p{
+		text-align: left;
+	}
+
+	.card-valuable-project-box {
+		max-width: 80%;
+		margin: 10px auto;
+	}
+
+}
+
+@media only screen and (max-width : 375px) {
+	.career-box-item {
+		width: 80%;
+	}
+
+	.availability{
+		flex-wrap: wrap;
+	}
+
+	.availability .level, .availability .available, .availability .experience {
+		width: calc(100%/2);
+	}
+
+	.clients-img{
+		width: calc(100%/2 - 20px);
+	}
+
+}
+
+@media only screen and (max-width : 320px) {
+	.terms-list ul li {
+		width: 100%;
+	}
+
+	.profile-box{
+		text-align: center;
+		justify-content: center;
+	}	
+
+	.profile-data{
+		padding: 3px;
+	}
+}

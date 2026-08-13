@@ -1,0 +1,24 @@
+/*!
+* PT. Shaantech Mitra Globalindo
+* Copyright 2026 Shaantech.
+*
+* import all files
+*
+*/
+
+/*import main custom*/
+@import "typography.css";
+@import "animate-custom.css";
+@import "form-master.css";
+@import "form.css";
+@import "general-master.css";
+@import "general.css";
+@import "navbar.css";
+@import "layout-sub-2.css";
+@import "layout-sub-1.css";
+@import "layout.css";
+@import "responsive-master.css";
+@import "responsive-sub-2.css";
+@import "responsive-sub-1.css";
+@import "responsive-navbar.css";
+@import "responsive.css";

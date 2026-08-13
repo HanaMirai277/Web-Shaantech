@@ -1,0 +1,346 @@
+/* =FORM
+------------------------------------------------------------ */
+
+/*button default*/
+button:focus{
+	outline: none !important;
+}
+
+.btn:visited,
+.btn:link {
+	color: #ffffff;
+}
+
+.btn-mjk{
+	background-color: #675eed;
+	font-size: 14px;
+}
+
+.btn-mjk.focus, .btn-mjk:focus {
+	box-shadow: 0 0 0 0.2rem rgb(255 141 0 / 25%);
+}
+
+.btn-mjk:hover{	
+	background-color: #113059;
+}
+
+.btn-circle {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+}
+
+.btn-circle i {
+	vertical-align: middle;
+}
+
+.btn-mjk.btn-circle.focus, .btn-mjk.btn-circle:focus {
+	box-shadow: 0 0 0 0.2rem rgb(154 154 154 / 25%);
+}
+
+/*Button CTA*/
+
+.btn-mjk-cta{	
+	padding: .7rem .75rem;
+	letter-spacing: 1.1px;
+}
+
+/*Button Colors*/
+
+.btn.btn-bg-white{
+	background-color: #ffffff;
+	color: #000000;
+	border: 1px solid transparent;
+}
+
+/*.btn-bg-white:hover{
+	background-color: #f3f3f3;
+	border: 1px solid #b7b7b7;
+	box-shadow: 0px 3px 20px rgb(0,0,0,0.1);
+}*/
+
+.btn-bg-orange{
+	background-color: #ff5100;
+}
+
+.btn-bg-orange:hover{
+	background-color: #dc4b07;
+}
+
+.btn-bg-softorange{
+	background-color: #f7882a;
+}
+
+.btn-bg-softorange:hover{
+	background-color: #d47321;
+}
+
+.btn-bg-softblue{
+	background-color: #675eed;
+}
+
+.btn-bg-softblue:hover{
+	background-color: #4942a8;
+}
+
+.btn-bg-darkgrey{
+	background-color: #808080;
+}
+
+.btn-bg-darkgrey:hover{
+	background-color: #656464;
+}
+
+
+/*Button transparent*/
+
+.btn-bg-transparent {
+	background-color: transparent;
+	color: #000000!important;
+}
+
+.btn-bg-transparent i {
+	color: #000000;
+}
+
+.btn-bg-transparent:hover i {
+	color: #000000;
+}
+
+.btn-bg-transparent:hover {
+	background-color: transparent;
+	color: #ffffff;
+}
+
+.btn-mjk.btn-bg-transparent.focus, .btn-mjk.btn-bg-transparent:focus {
+	box-shadow: unset;
+}
+
+.underlined{
+	border-bottom: 2px solid #fe6819;
+}
+
+/*form control*/
+
+.form-group-mjk label{
+	color: #000000;
+	font-size: 14px;
+}
+
+.form-control {
+	background-color: transparent;
+	border: transparent;
+	border-radius: unset;
+	border-bottom: 2px solid #dddddd;
+}
+
+.form-control:focus {
+	background-color: transparent;
+	box-shadow: unset;
+    border-color: #ced4da;
+}
+
+.form-control.error {
+	padding: .375rem .75rem;
+}
+
+.form-group-mjk .form-control,
+.form-group-mjk .select-mjk-box {
+	background-color: transparent;
+	color: #000000;
+}
+
+.form-group-mjk .form-control:-webkit-autofill,
+.form-group-mjk .form-control:-webkit-autofill:hover, 
+.form-group-mjk .form-control:-webkit-autofill:focus{
+	background-color: transparent;
+}
+
+label.error, label.success, 
+.error, .success, 
+.modal-body .error, 
+.modal-body .success, 
+.modal-body label.error, 
+.modal-body label.success{
+	padding: .375rem 0;
+}
+
+.select-mjk-box {
+	border-color: transparent;
+	border-bottom: 2px solid #dddddd;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.select-mjk-box .select2-container--default .select2-selection--single .select2-selection__rendered {
+	color: #000000;
+}
+
+.select-mjk-box .select2-container--default .select2-selection--single{
+	padding: 0;
+}
+
+.select2-container--default .select2-results__option--disabled{
+	display: none;
+}
+
+.captcha-box {
+	display: block;
+	position: relative;
+}
+
+.captcha-box img {
+	width: 100%;
+	max-width: 220px;
+}
+
+.file-mjk .custom-file-label {
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid #ced4da;
+    color: #000000;
+}
+
+.file-mjk .custom-file-label::after {
+    content: "BROWSE";
+    background-color: transparent;
+    color: #000000;
+}
+
+.file-mjk .custom-file-label::before {
+    content: url('../images/dummy/clip.png');
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    position: relative;
+    float: right;
+    margin-right: 65px;
+}
+
+/*dropdown language*/
+
+#select2-countries-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #392b23;
+}
+#select2-countries_mobile-container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #392b23;
+}
+
+.navbar .select-mjk-box {
+    border-bottom: unset;
+    background-color: transparent;
+}
+
+.dropdown-language {
+	top: 12px;
+    border-color: transparent;
+    border-radius: 4px;
+    border-top: 1px solid transparent!important;
+    border-top-left-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    border: 1px solid transparent;
+    overflow: hidden;
+    box-shadow: 0 2.5px 20px 0 rgba(0,0,0,0.15);
+}
+
+#select2-countries-results div,
+#select2-countries_mobile-results div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #392b23;
+    line-height: 1;
+}
+
+.img-flag{
+	width: 14px;
+    height: 100%; 
+}
+
+.dropdown-language .select2-results__option{
+	padding: 8px;
+}
+
+#select2-countries-results .select2-results__option--highlighted[aria-selected] div, 
+#select2-countries_mobile-results .select2-results__option--highlighted[aria-selected] div{
+	color: #ffffff;
+}
+
+/*Style form*/
+
+.form-group-mjk label {
+    margin: 0;
+}
+
+.form-group-mjk {
+    display: block;
+    position: relative;
+}
+
+.form-group-mjk:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #ff9900;
+    transition: all .2s ease;
+    -webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: 50%;
+	transform-origin: 50%;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.form-group-mjk.error:before {
+    bottom: 39px;
+    z-index: 2;
+    background-color: red;
+}
+
+.form-style-line:before {
+    -webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.form-style-line-error:before {
+	z-index: 2;
+	bottom: 0px;
+	background-color: red;
+    -webkit-transform: scaleX(1);
+	transform: scaleX(1);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    margin-top: -5px;
+}
+
+.form-group-mjk input[data-radio] {
+    display: none;
+}
+
+.form-style-line-error.valid:before {
+    background-color: #ff9900;
+}

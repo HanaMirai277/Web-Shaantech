@@ -1,0 +1,280 @@
+/* Desktop First Design */
+
+/* Larger Devices, Wider Screens */
+@media only screen and (min-width : 1700px) {}
+
+@media (min-width : 1500px) and (max-width: 1700px) {}
+
+@media only screen and (min-width : 1367px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 1200px) {}
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (min-width : 1024px) {}
+
+@media only screen and (max-width : 1024px) {
+
+    /* = FOOTER
+	------------------------------------------------------------ */
+    .foo-menu p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+
+    .foo-menu li {
+        font-size: 14px;
+    }
+
+    .social-network-footer li p {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width : 992px) {}
+
+/* Start mobile responsive */
+@media only screen and (max-width : 991px) {
+
+    /* = FOOTER
+	------------------------------------------------------------ */
+    .address-footer {
+        padding-left: 0;
+    }
+
+    .foo-menu-static ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* = CARD
+	------------------------------------------------------------ */
+    .card-mjk-desc {
+        width: 100%;
+        padding: 1em 1em;
+        margin-top: 0;
+    }
+
+    /*card project*/
+    .card-number h1 {
+        font-size: 40px;
+    }
+
+    .card-project .card-mjk-desc {
+        padding: 1em 1em;
+        bottom: 0;
+        width: 100%;
+        padding-left: 35px;
+        padding-right: 35px;
+        position: relative;
+        background-color: #fcfcfc;
+    }
+
+    .card-project .card-mjk-desc-item h3 {
+        font-size: 20px;
+    }
+
+    .card-project .card-category p {
+        font-size: 14px;
+    }
+
+    .card-project .card-mjk-desc-item {
+        margin: 0px 0 15px;
+    }
+
+    .section-projects .card-project .card-mjk-desc {
+        width: 100%;
+    }
+
+    .card-project-description .card-mjk-desc {
+        width: 95%;
+    }
+
+    /* = PROJECT DETAIL
+	------------------------------------------------------------ */
+    .project-desc-big h1 {
+        font-size: 30px;
+    }
+
+    .project-desc-big h2 {
+        font-size: 24px;
+    }
+
+    .title-outline h3 {
+        font-size: 26px;
+    }
+
+
+    .project-img-preview.img-parallax {
+        background-attachment: unset;
+        height: 300px;
+    }
+
+    /*card step*/
+    .card-step-row-box {
+        flex-direction: column;
+    }
+
+    .card-step-row-box .card-step-line:after {
+        display: none;
+    }
+
+    .card-step-row-box .card-step-line:before {
+        display: none;
+    }
+
+    .card-step-row-box .card-step-number {
+        left: 30%;
+    }
+
+    .card-step-row-box .card-box .card-item {
+        margin: 10px 0;
+    }
+
+}
+
+/* Small Devices, Desktops */
+@media only screen and (max-width : 812px) {}
+
+@media only screen and (max-width : 768px) {}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px) {
+
+    /*card project*/
+    .card-project .card-mjk-desc {
+        position: relative;
+    }
+
+    /* = PROJECT DETAIL
+	------------------------------------------------------------ */
+    .project-desc-big h1 {
+        font-size: 24px;
+    }
+
+    .project-desc-big h2 {
+        font-size: 20px;
+    }
+
+    .title-outline h3 {
+        font-size: 20px;
+    }
+
+    .title-primary h3 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    /* = SERVICES
+	------------------------------------------------------------ */
+    .services-list ul {
+        justify-content: center;
+    }
+
+    /* = EMPTY PAGE
+	------------------------------------------------------------ */
+    .empty-page-desc h2,
+    .empty-page-desc h3 {
+        font-size: 1.6rem;
+    }
+
+    .empty-page-desc p {
+        font-size: 14px;
+    }
+
+    /* = SINGLE CONTENT
+	------------------------------------------------------------ */
+    .single-content-left {
+        flex-direction: column;
+    }
+
+    .single-content-left .card-desc-box {
+        padding: 0;
+        margin: 30px 0;
+    }
+
+    .single-content-right {
+        flex-direction: column;
+    }
+
+    .single-content-right .card-desc-box {
+        padding: 0;
+        margin: 30px 0;
+    }
+
+    .project-desc-big h2 {
+        font-size: 20px;
+    }
+
+    .services-list-item h4 {
+        font-size: 16px;
+    }
+
+    .services-list li {
+        width: 240px;
+    }
+
+}
+
+@media only screen and (max-width : 640px) {}
+
+@media only screen and (max-width : 575px) {
+    .services-list li {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .services-box {
+        flex-direction: column;
+    }
+
+    .services-list li {
+        width: 150px;
+    }
+
+    .services-list-item h4 {
+        font-size: 16px;
+    }
+
+
+    /* = EMPTY PAGE
+	------------------------------------------------------------ */
+    .empty-page-title h1,
+    .empty-page-title h2 {
+        font-size: 4rem;
+    }
+
+    .empty-page-desc h2,
+    .empty-page-desc h3 {
+        font-size: 1.3rem;
+    }
+
+    .empty-page-desc p {
+        font-size: 12px;
+    }
+
+    /* =OTHER 
+	-------------------------------------------------------------*/
+    /*Button Back to TOP*/
+    #backtotop {
+        bottom: 40px;
+    }
+
+}
+
+@media only screen and (max-width : 375px) {
+
+    /* =OTHER 
+	-------------------------------------------------------------*/
+    /*Button Back to TOP*/
+    #backtotop {
+        bottom: 60px;
+    }
+
+}
+
+@media only screen and (max-width : 320px) {}

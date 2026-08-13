@@ -1,0 +1,44 @@
+/* = ADDITIONAL
+-------------------------------------------------------------*/
+.section-hero-top {
+	padding-top: 0;
+}
+.section-top {
+	margin-top: 0;
+}
+
+.banner-full-image{
+	height: auto;
+}
+
+.banner-caption .btn-mjk img{
+	display: unset;
+	width: 20px;
+	height: 20px;
+	object-fit: unset;
+	object-position: unset;
+	z-index: unset;
+}
+
+.title-main {
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.title-main:before {
+	content: "";
+	display: block;
+	position: relative;
+	width: 35px;
+	height: 2px;
+	background-color: #000000;
+	margin-right: 20px;
+}
+
+.title-main p{
+	color: #000000;
+	font-size: 16px;
+	line-height: 1.2;
+	margin-bottom: 0;
+}

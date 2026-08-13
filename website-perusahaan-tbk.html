@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Home | Web Designer &amp; Web Developer Studio di Purwokerto Indonesia | PT Shaantech Mitra Globalindo</title>
+
+    <meta name="title" content="Web Designer &amp; Web Developer Studio di Jakarta Indonesia | PT Shaantech Mitra Globalindo" />
+    <meta name="author" content="Web Designer &amp; Web Developer Studio di Jakarta Indonesia | PT Shaantech Mitra Globalindo" />
+    <meta name="description" content="SHAANTECH. Clean, simple and useful. We are a company specialized in creating websites, mobile apps and e-commerce system. " />
+    <meta name="keywords" content="web developer,jakarta,indonesia,bali,yogyakarta,web designer,android,ios mobile apps developer" />
+
+    <!-- ****** START FAVICONS ****** -->
+    <link rel="apple-touch-icon" sizes="76x76" href="themes/globals/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="themes/globals/favicon/shaantech-icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="themes/globals/favicon/shaantech-icon-16x16.png">
+    <link rel="mask-icon" href="themes/globals/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- ****** END FAVICONS ****** -->    <!-- ****** begin favicons ****** -->
+
+    <link rel="apple-touch-icon" sizes="76x76" href="themes/front/default/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="themes/front/default/images/favicons/shaantech-icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="themes/front/default/images/favicons/shaantech-icon-16x16.png">
+    <link rel="mask-icon" href="themes/front/default/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- ****** end favicons ****** -->
+
+    <!-- begin fonts -->
+    <link  media="print" onload="this.onload=null;this.removeAttribute('media');" rel="stylesheet"  href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link media="print" onload="this.onload=null;this.removeAttribute('media');"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"> 
+    <link media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- begin basic framework engine css -->
+    <link media="print" onload="this.onload=null;this.removeAttribute('media');" rel="stylesheet" type="text/css" href="themes/front/default/css/bootstrap.min.css"/>
+    <!-- end basic framework engine css -->
+
+    <!-- begin jquery -->
+    <link media="print" onload="this.onload=null;this.removeAttribute('media');" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link media="print" onload="this.onload=null;this.removeAttribute('media');" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css">
+    <link media="print" onload="this.onload=null;this.removeAttribute('media');" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css">
+    <!-- end jquery -->
+
+    <!-- begin ADD ON / PLUGINS CSS -->
+    <link media="print" onload="this.onload=null;this.removeAttribute('media');" rel="stylesheet" type="text/css" href="themes/front/default/plugins/animate/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/plugins/select2/dist/css/select2.min.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/plugins/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/plugins/slick-carousel/slick/slick.css"/>
+    <link media="print" onload="this.onload=null;this.removeAttribute('media');"  rel="stylesheet" type="text/css" href="themes/front/default/plugins/fancybox/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.css" />
+    <!-- end ADD ON / PLUGINS CSS -->
+
+    <!-- begin basic css in local -->
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/shaan-typography.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/shaan-animate-custom.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/shaan-form-master.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/shaan-form.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/general-master.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/general.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/shaan-navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/shaan-layout-sub-2.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/shaan-layout-sub-1.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/responsive-master.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/shaan-responsive-sub-2.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/responsive-sub-1.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/responsive-navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/responsive.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/front/default/css/shaan-custom.css"/>
+    <!-- end basic css in local -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.css">
+    <style type="text/css">        
+        .bg-shadow {
+            background-image: url(themes/front/default/images/dummy/img-imjk-bg-silver.png);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .title-main {
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        
+        .title-main h2 {
+            font-size: 18px;
+            font-weight: normal;
+            padding-top: 5px;
+        }
+
+        .title-main:before {
+            content: "";
+            width: 35px;
+            height: 2px;
+            background-color: #000000;
+            margin-right: 20px;
+        }
+
+        .title-main p{
+            color: #000000;
+            font-size: 16px;
+            line-height: 1.2;
+            margin-bottom: 0;
+        }
+
+        .section {
+            padding: 50px 0 50px;
+        }
+    </style>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '24285318914402634');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=24285318914402634&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+    <div id="wrapper">
+        <noscript>
+            <div class="alert alert-danger">
+                <span><strong>For full functionality of this site it is necessary to enable JavaScript. </strong> Here are the <a href="http://www.enable-javascript.com/" class="alert-link" target="_blank"> instructions how to enable JavaScript in your web browser</a>.</span>
+            </div>
+        </noscript>
+        <div class="preloader-layout">
+            <div class="preloader-animation">
+                <!--        <img src="https://imajiku.com/themes/front/default//images/global/img-imjk-logo-black.png" alt="" class="logo">-->
+                <div class="preloader-bar"></div>
+            </div>
+        </div>
+
+        <!-- function class active on mainmenu -->
+        <header id="headertop">
+            <div id="search-body" class="search-body">
+                <form role="search" action="index.php?pages=search" method="post">
+                    <input name="search" type="search" placeholder="type to search" />
+                </form>
+                <a href="javascript:void(0);" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <!-- begin.navbar header -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-row">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="themes/front/default/images/global/img-shaan-logo-black.png" alt="" title="" />
+                    </a>
+                    <button class="navbar-toggler finebody" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto ml-0 navbar-mjk-mainmenu">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="home.html" id="btn-beranda">Beranda</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="projects.html" id="btn-proyek">Proyek</a>
+                            </li>
+                            <li class="nav-item dropdown ">
+                                <a class="nav-link" href="service.html">Layanan</a>
+                                <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret-mjk-desktop">
+                                        <i class="fas fa-chevron-down"></i>
+                                    </span>
+                                    <span class="caret-mjk-mobile">
+                                        <i class="fas fa-plus"></i>
+                                        <i class="fas fa-minus"></i>
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu shadow" aria-labelledby="menudda1">
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">Pengembangan Website</a>
+                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret-mjk-desktop">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                            <span class="caret-mjk-mobile">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </a>
+                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret-mjk-desktop">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                            <span class="caret-mjk-mobile">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </a>
+                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret-mjk-desktop">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                            <span class="caret-mjk-mobile">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </a>
+                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret-mjk-desktop">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                            <span class="caret-mjk-mobile">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </a>
+                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret-mjk-desktop">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                            <span class="caret-mjk-mobile">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11">
+                                            <li><a class="dropdown-item" href="website-company-profile.html">Website Company Profile</a></li>
+                                            <li><a class="dropdown-item" href="website-perusahaan-tbk.html">Website Perusahaan Tbk</a></li>
+                                            <li><a class="dropdown-item" href="website-e-commerce.html">Website E-Commerce</a></li>
+                                            <li><a class="dropdown-item" href="website-custom.html">Website Custom</a></li>
+                                            <li><a class="dropdown-item" href="erp-custom.html">ERP Kustom</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">Digital Marketing</a>
+                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret-mjk-desktop">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                            <span class="caret-mjk-mobile">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </a>
+                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret-mjk-desktop">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                            <span class="caret-mjk-mobile">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </a>
+                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret-mjk-desktop">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                            <span class="caret-mjk-mobile">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </a>
+                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret-mjk-desktop">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                            <span class="caret-mjk-mobile">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </a>
+                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret-mjk-desktop">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                            <span class="caret-mjk-mobile">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11">
+                                            <li><a class="dropdown-item" href="manajemen-media-sosial.html">Manajemen Media Sosial </a></li>
+                                            <li><a class="dropdown-item" href="optimasi-google-bisnis-dan-google-maps.html">Optimasi Google Bisnis dan Google Maps</a></li>
+                                            <li><a class="dropdown-item" href="performance-marketing.html">Performance Marketing</a></li>
+                                            <li><a class="dropdown-item" href="seo.html">SEO</a></li>
+                                            <li><a class="dropdown-item" href="iklan-marketplace.html">Iklan Marketplace</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="#">Pembuatan Sales Funel</a>
+                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret-mjk-desktop">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                            <span class="caret-mjk-mobile">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </a>
+                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret-mjk-desktop">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                            <span class="caret-mjk-mobile">
+                                                <i class="fas fa-plus"></i>
+                                                <i class="fas fa-minus"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11">
+                                            <li><a class="dropdown-item" href="pembuatan-landing-page.html">Pembuatan Landing Page</a></li>
+                                            <li><a class="dropdown-item" href="pengembangan-web-sales-funel.html">Pengembangan Web Sales Funel</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="pengembangan-aplikasi-android-dan-ios-custom.html">Pengembangan Aplikasi Android dan iOS Custom</a>
+                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11"></ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="pembuatan-konten.html">Pembuatan Konten</a>
+                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11"></ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="desain-grafis.html">Desain Grafis</a>
+                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11"></ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a class="dropdown-item" href="maintenance-website-dan-mobile-apps.html">Maintenance Website dan Mobile Apps</a>
+                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11"></ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="about.html" id="btn-tentang">Tentang</a>
+                            </li>
+                            <!-- <li class="nav-item ">
+                                <a class="nav-link" href="#" id="btn-karir">Karir</a>
+                            </li> -->
+                            <li class="nav-item ">
+                                <a class="nav-link" href="contact.html" id="btn-kontak-1">Kontak</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="blog.html" id="btn-blog">Blog</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto mr-3 navbar-mjk-top">
+                            <li class="nav-item">
+                                <a class="nav-link nav-tel" href="https://wa.me/+6285186868807" title="phone">
+                                    <div><span>Hubungi Kami/WA</span> +6285186868807</div><i class="fas fa-phone fa-flip-horizontal"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-mail" href="mailto:marketing@shaantech.com" title="mail">
+                                    <div class="btn btn-mjk btn-mjk-orange">Email Kami!</div>
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- end.navbar header -->
+        </header>
+        
+        <main class="layout-page bg-shadow">
+            <div class="layout-page ">
+                <section class="section-top">
+                    <div class="banner-box banner-box-clip" style="background-image: url('userfiles/post/hero-section.jpeg');">
+                        <div class="banner-caption">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                        <h1 class="mb-4">Pengembangan Website Perusahaan Tbk yang Profesional</h1>
+                                        <div class="title-main">
+                                            <p>
+                                                <p>Website perusahaan sangat penting bagi perusahaan yang terdaftar di bursa (Tbk), karena untuk mematuhi standar regulasi dan menyediakan transparansi bagi investor dan pemangku kepentingan. Di SHAANTECH, kami membuat website yang interaktif dan aman untuk menampilkan laporan keuangan, rapat tahunan, dan tata kelola perusahaan dengan format yang jelas dan mudah diakses. Website perusahaan Tbk kami dirancang untuk mencerminkan profesionalisme sekaligus memastikan kepatuhan dengan peraturan keuangan terbaru.</p>
+                                                <p>&nbsp;</p>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="title-primary text-center mb-4">
+                                    <h2>Fitur Utama</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <p>
+                                    <p>Kami membangun website yang memungkinkan perusahaan Anda berbagi data penting dengan lancar sambil meningkatkan kepercayaan dan komunikasi dengan investor.</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="btn btn-mjk btn-mjk-cta btn-bg-white btn-tech">
+                                    <img src="userfiles/post/pembuatan-website.png" alt="" />
+                                    Kepatuhan dengan Regulasi Keuangan
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="btn btn-mjk btn-mjk-cta btn-bg-white btn-tech">
+                                    <img src="userfiles/post/pembuatan-aplikasi-mobile.png" alt="" />
+                                    Bagian Hubungan Investor
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="btn btn-mjk btn-mjk-cta btn-bg-white btn-tech">
+                                    <img src="userfiles/post/pembuatan-website.png" alt="" />
+                                    Fitur Interaktif
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="btn btn-mjk btn-mjk-cta btn-bg-white btn-tech">
+                                    <img src="userfiles/post/pembuatan-aplikasi-mobile.png" alt="" />
+                                    Desain Responsif
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-duration="1000">
+                                <div class="btn btn-mjk btn-mjk-cta btn-bg-white btn-tech">
+                                    <img src="userfiles/post/pembuatan-sistem-ecommerce.png" alt="" />
+                                    Keamanan Tinggi
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section bg-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="title-primary text-center mb-4">
+                                    <h2>Telah Dipercaya Oleh Beberapa Merk:</h2>
+                                </div>
+                                <div class="brands-box">
+                                    <div class="brands-img">
+                                        <div class="brands-grid">
+                                            <img src="userfiles/post/5fb7026ab3fbf.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="brands-img">
+                                        <div class="brands-grid">
+                                            <img src="userfiles/post/5fb702780d227.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="brands-img">
+                                        <div class="brands-grid">
+                                            <img src="userfiles/post/5fb70289c17f3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="brands-img">
+                                        <div class="brands-grid">
+                                            <img src="userfiles/post/5fb702949eb86.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="brands-img">
+                                        <div class="brands-grid">
+                                            <img src="userfiles/post/5fb702a507dc3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section bg-orange">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-8 col-lg-8 text-center">
+                                <div class="banner-caption-inline title-primary">
+                                    <h2><strong> Membutuhkan Situs Bisnis Yang Mendatangkan Calon Pelanggan? Mari Terhubung!</strong></h2>
+                                </div>
+                                <div class="banner-action-area justify-content-center mt-4">
+                                    <a class="btn btn-mjk btn-mjk-cta btn-bg-softblue text-uppercase mr-lg-3" role="button" href="#" title="contact"><img class="mr-3" src="themes/front/default/images/icons/contact.png" alt="contact" />contact us </a>
+                                    <a class="btn btn-mjk btn-mjk-cta btn-bg-wa text-uppercase" href="#"><i class="fab fa-whatsapp mr-1"></i> Whatsapp</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section bg-white">
+                    <div class="container">
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="title-primary text-center ">
+                                    <h2>Bagaimana Kami Membuat Webiste?</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card-step-row-box">
+                                    <div class="card-box">
+                                        <article>
+                                            <div class="card-package eqh-card-desc">
+                                                <div class="card-step-number">
+                                                    <h4>1</h4>
+                                                </div>
+                                                <div class="card-package-row">
+                                                    <div class="card-img">
+                                                        <figure>
+                                                            <img src="userfiles/post/analisis-kebutuhan.png" class="img-fluid" alt="">
+                                                        </figure>
+                                                        <div class="card-step-line"></div>
+                                                    </div>
+                                                    <div class="card-item">
+                                                        <div class="card-desc-item">
+                                                            <div class="card-title">
+                                                                <h3>Analisis Kebutuhan</h3>
+                                                            </div>
+                                                            <div class="card-desc">
+                                                                <p>Pelajari industri. Riset pasar</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-box">
+                                        <article>
+                                            <div class="card-package eqh-card-desc">
+                                                <div class="card-step-number">
+                                                    <h4>2</h4>
+                                                </div>
+                                                <div class="card-package-row">
+                                                    <div class="card-img">
+                                                        <figure>
+                                                            <img src="userfiles/post/spesifikasi-rencana-pembuatan.png" class="img-fluid" alt="">
+                                                        </figure>
+                                                        <div class="card-step-line"></div>
+                                                    </div>
+                                                    <div class="card-item">
+                                                        <div class="card-desc-item">
+                                                            <div class="card-title">
+                                                                <h3>Spesifikasi Rencana & Pembuatan</h3>
+                                                            </div>
+                                                            <div class="card-desc">
+                                                                <p>Mengevaluasi kondisi saat ini & mengembangkan rencana untuk memecah masalah dan mencapai tujuan</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-box">
+                                        <article>
+                                            <div class="card-package eqh-card-desc">
+                                                <div class="card-step-number">
+                                                    <h4>3</h4>
+                                                </div>
+                                                <div class="card-package-row">
+                                                    <div class="card-img">
+                                                        <figure>
+                                                            <img src="userfiles/post/desain-pengembangan.png" class="img-fluid" alt="">
+                                                        </figure>
+                                                        <div class="card-step-line"></div>
+                                                    </div>
+                                                    <div class="card-item">
+                                                        <div class="card-desc-item">
+                                                            <div class="card-title">
+                                                                <h3>Desain & Pengembangan</h3>
+                                                            </div>
+                                                            <div class="card-desc">
+                                                                <p>Implementasi rencana menjadi tindakan. Tahap wireframe, desain konsep, dan coding</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-box">
+                                        <article>
+                                            <div class="card-package eqh-card-desc">
+                                                <div class="card-step-number">
+                                                    <h4>4</h4>
+                                                </div>
+                                                <div class="card-package-row">
+                                                    <div class="card-img">
+                                                        <figure>
+                                                            <img src="userfiles/post/uat.png" class="img-fluid" alt="">
+                                                        </figure>
+                                                        <div class="card-step-line"></div>
+                                                    </div>
+                                                    <div class="card-item">
+                                                        <div class="card-desc-item">
+                                                            <div class="card-title">
+                                                                <h3>User Acceptance Test (UAT)</h3>
+                                                            </div>
+                                                            <div class="card-desc">
+                                                                <p>Pengujian, pengujian, dan pengujian</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-box">
+                                        <article>
+                                            <div class="card-package eqh-card-desc">
+                                                <div class="card-step-number">
+                                                    <h4>5</h4>
+                                                </div>
+                                                <div class="card-package-row">
+                                                    <div class="card-img">
+                                                        <figure>
+                                                            <img src="userfiles/post/peluncuran-proyek.png" class="img-fluid" alt="">
+                                                        </figure>
+                                                        <div class="card-step-line"></div>
+                                                    </div>
+                                                    <div class="card-item">
+                                                        <div class="card-desc-item">
+                                                            <div class="card-title">
+                                                                <h3>Peluncuran Proyek</h3>
+                                                            </div>
+                                                            <div class="card-desc">
+                                                                <p>Pengujian. Persetujuan</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="card-box">
+                                        <article>
+                                            <div class="card-package eqh-card-desc">
+                                                <div class="card-step-number">
+                                                    <h4>6</h4>
+                                                </div>
+                                                <div class="card-package-row">
+                                                    <div class="card-img">
+                                                        <figure>
+                                                            <img src="userfiles/post/pemeliharaan.png" class="img-fluid" alt="">
+                                                        </figure>
+                                                        <div class="card-step-line"></div>
+                                                    </div>
+                                                    <div class="card-item">
+                                                        <div class="card-desc-item">
+                                                            <div class="card-title">
+                                                                <h3>Pemeliharaan</h3>
+                                                            </div>
+                                                            <div class="card-desc">
+                                                                <p>Peningkatan & pemasaran</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section bg-grey">
+                    <div class="container">
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <div class="title-primary text-center ">
+                                    <h2>FAQ</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                                <div class="accordion accordion-faq" id="articlefaq">
+                                    <div class="collapse-mjk-item">
+                                        <div class="collapse-mjk-head" id="faq-question-0">
+                                            <a class="collapse-mjk-link nav-variant-1" data-toggle="collapse" href="#articlefaq0" role="button" aria-expanded="true" aria-controls="articlefaq0">
+                                                <h4>1. Apa pentingnya memiliki website untuk perusahaan Tbk?</h4>
+                                            </a>
+                                        </div>
+                                        <div id="articlefaq0" class="collapse-mjk-body collapse show" aria-labelledby="faq-question-0" data-parent="#articlefaq">
+                                            <article class="article">
+                                                <p>Website perusahaan Tbk sangat penting untuk menjaga transparansi dan kepatuhan terhadap peraturan keuangan dan perusahaan. Website ini menyediakan akses bagi investor dan pemangku kepentingan ke informasi keuangan penting dan pembaruan.</p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="collapse-mjk-item">
+                                        <div class="collapse-mjk-head" id="faq-question-1">
+                                            <a class="collapse-mjk-link nav-variant-1" data-toggle="collapse" href="#articlefaq1" role="button" aria-expanded="false" aria-controls="articlefaq1">
+                                                <h4>2. Fitur apa saja yang harus dimiliki oleh website perusahaan Tbk?</h4>
+                                            </a>
+                                        </div>
+                                        <div id="articlefaq1" class="collapse-mjk-body collapse " aria-labelledby="faq-question-1" data-parent="#articlefaq">
+                                            <article class="article">
+                                                <p>Website perusahaan Tbk harus mencakup bagian hubungan investor, laporan keuangan, pembaruan kinerja saham, dan dokumen yang dapat diunduh, serta memastikan kepatuhan terhadap regulasi dan keamanan data.</p>
+                                                <p>&nbsp;</p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="collapse-mjk-item">
+                                        <div class="collapse-mjk-head" id="faq-question-2">
+                                            <a class="collapse-mjk-link nav-variant-1" data-toggle="collapse" href="#articlefaq2" role="button" aria-expanded="false" aria-controls="articlefaq2">
+                                                <h4>3. Seberapa aman website untuk menangani data sensitif?</h4>
+                                            </a>
+                                        </div>
+                                        <div id="articlefaq2" class="collapse-mjk-body collapse " aria-labelledby="faq-question-2" data-parent="#articlefaq">
+                                            <article class="article">
+                                                <p>Kami menggunakan protokol keamanan canggih, termasuk sertifikat SSL, firewall, dan enkripsi data untuk melindungi semua informasi sensitif perusahaan yang dibagikan melalui website.</p>
+                                                <p>&nbsp;</p>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div>
+                    <div class="banner-box banner-box-contact">
+                        <div class="banner-caption text-left">
+                            <div class="container banner-caption-text">
+                                <div class="row justify-content-start">
+                                    <div class="col-12 col-md-8 col-lg-8">
+                                        <div class="banner-caption-inline">
+                                            <div class="title-primary title-main mb-4">
+                                                <h2>Yang Kami Lakukan</h2>
+                                            </div>
+                                            <h3><strong> Kami menciptakan hubungan antara&nbsp;brand,&nbsp;produk dan layanan agar dapat memberikan makna yang lebih dalam antara bisnis dan manusia.</strong></h3>
+                                        </div>
+                                        <div class="banner-action-area">
+                                            <a class="btn btn-mjk btn-mjk-cta btn-bg-softblue text-uppercase" role="button" href="#" title="contact"><img class="mr-3" src="themes/front/default/images/icons/contact.png" alt="contact" />Hubungi Kami</a>
+                                            <a class="btn btn-mjk btn-bg-transparent" href="#" target="_blank" title="instagram">Ikuti akun <i class="fab fa-instagram ml-1 mr-1"></i><span class="underlined">@shaantech</span> di instagram</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figure>
+                            <img src="themes/front/default/images/dummy/banner/img-shaan-banner-contact.webp" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="footer-middle">
+                    <div class="container">
+                        <div class="row mt-4">
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-4">
+                                <div class="foo-menu">
+                                    <div class="logo-footer mb-3">
+                                        <figure>
+                                            <img src="themes/front/default/images/global/img-shaan-logo-black.png" alt="" title="" />
+                                        </figure>
+                                    </div>
+                                    <div class="address-footer">
+                                        <p>PT Shaantech Mitra Globalindo</p>
+                                        <p>Perum. Kedungrandu Regency, Blok L16,</p>
+                                        <p>Kedungrandu, Kec. Patikraja,</p>
+                                        <p>Kabupaten Banyumas, Jawa Tengah - Indonesia 53171</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-3 col-lg-3 mb-4">
+                                <div class="foo-menu foo-tel">
+                                    <ul>
+                                        <li>
+                                            <p>Marketing</p>
+                                            <p><a target="_blank" href="https://wa.me/+6285186868807?text=Halo PT Shaantech Mitra Globalindo, saya hendak bertanya mengenai website & mobile apps development" title="">+62 851-8686-8807 (WA/Call)</a></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-4">
+                                <div class="foo-menu">
+                                    <ul>
+                                        <li><a href="#" title="">Beranda</a></li>
+                                        <li><a href="#" title="">Proyek</a></li>
+                                        <li><a href="#" title="">Layanan</a></li>
+                                        <li><a href="#" title="">Tentang Kami</a></li>
+                                        <li><a href="#" title="">Karir</a></li>
+                                        <li><a href="#" title="">Kontak</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-4">
+                                <div class="social-network-footer">
+                                    <ul>
+                                        <li>
+                                            <a class="effect-rotate" href="https://www.facebook.com/imajikuciptamedia/" title="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="effect-rotate" href="https://www.instagram.com/imajikuciptamedia/" title="" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        </li>
+                                        <li>
+                                            <a class="effect-rotate" href="https://www.linkedin.com/company/pt-imajiku-cipta-media/&nbsp;" title="" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="copyright">
+                                    <h4 class="mb-3">PT Shaantech Mitra Globalindo © 2026</h4>
+                                    <p>ShaanTech (PT. Shaantech Mitra Globalindo) adalah perusahaan teknologi yang menyediakan berbagai layanan pengembangan digital untuk bisnis. Layanan kami dirancang untuk membantu UMKM hingga perusahaan besar bertransformasi secara digital dan meningkatkan kinerja bisnis mereka.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <a onclick="topFunction()" id="backtotop" title="Go to top"><i class="fas fa-chevron-up"></i></a>
+    </div>
+
+    <!-- begin jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- end jquery -->
+
+    <!-- begin popper js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <!-- end popper js -->
+
+    <!-- begin basic framework engine js -->
+    <script src="https://imajiku.com/themes/front/default/js/bootstrap.min.js"></script>
+    <!-- end basic framework engine js -->
+
+    <!-- begin jquery extra -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <!-- end jquery extra -->
+
+    <!-- START ADD ON / PLUGINS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://imajiku.com/themes/front/default/plugins/select2/dist/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://imajiku.com/themes/front/default/plugins/equalize-height/src/jquery.equal-heights.js"></script>
+    <script src="https://imajiku.com/themes/front/default/plugins/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://imajiku.com/themes/front/default/plugins/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://imajiku.com/themes/front/default/plugins/masonry-layout/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+
+    <!-- begin plugin AOS Js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/3.0.0-beta.6/aos.js" integrity="sha512-tnNM6PPNOVfZ5sGPw6hThCrcUBeqt2mVEk3EAj8tCtuMHqbuVm5/HsZagrr8W2aaFE+6rKIByGwQbEnmodrYVg==" crossorigin="anonymous"></script>
+    <!-- end plugin AOS Js -->
+
+    <!-- begin plugin upload files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+    <!-- end plugin upload files -->
+
+    <!-- begin plugin Leaflet Js -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <!-- end plugin Leaflet Js -->
+
+    <!-- begin plugin copy text -->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <!-- end plugin copy text -->
+
+    <!-- begin plugin zepto for lazy -->
+    <script src="https://cdn.jsdelivr.net/npm/zepto@1.2.0/dist/zepto.min.js"></script>
+    <!-- end plugin zepto for lazy -->
+
+    <!-- begin plugin jquery lazy -->
+    <script src="https://imajiku.com/themes/front/default/plugins/jqueryLazy/jquery.lazy.min.js"></script>
+    <!-- end plugin jquery lazy -->
+
+    <!-- begin plugin jquery filterizr -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/jquery.filterizr.min.js"></script>
+    <!-- end plugin jquery filterizr -->
+    <!-- END ADD ON / PLUGINS JS -->
+
+    <!-- begin basic js in local -->
+    <script src="https://imajiku.com/themes/front/default/js/main-form-validation.js"></script>
+    <script src="https://imajiku.com/themes/front/default/js/main.js"></script>
+    <!-- end basic js in local -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.js'></script>
+
+    <script>
+        $(document).ready(function() {
+            $('a[href="'+window.location.href+'"]').parent().addClass('active');
+            $('ul.dropdown-menu.child_check').each(function() {
+                // Jika tidak ada <li> di dalam <ul>, hapus <ul> tersebut
+                if ($(this).children('li').length === 0) {
+                    $(this).remove();
+                }
+            });
+        });
+    </script>
+
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>
+        (function($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[0] = 'EMAIL';
+            ftypes[0] = 'email';
+            fnames[1] = 'FNAME';
+            ftypes[1] = 'text';
+            fnames[2] = 'LNAME';
+            ftypes[2] = 'text';
+            fnames[3] = 'ADDRESS';
+            ftypes[3] = 'address';
+            fnames[4] = 'PHONE';
+            ftypes[4] = 'phone';
+            fnames[5] = 'BIRTHDAY';
+            ftypes[5] = 'birthday';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FN0PYE12J"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8FN0PYE12J');
+    </script>
+        <script type="text/javascript">
+        $("a[rel=next]").addClass('btn btn-mjk btn-circle btn-bg-darkgrey effect-rotate');
+        $("a[rel=prev]").addClass('btn btn-mjk btn-circle btn-bg-darkgrey effect-rotate');
+    </script>
+</body>
+</html>
