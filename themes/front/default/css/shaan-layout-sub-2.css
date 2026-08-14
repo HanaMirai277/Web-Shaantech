@@ -52,10 +52,11 @@
     clip-path: ellipse(150% 95% at top);
     -webkit-clip-path: ellipse(150% 95% at top);
     -moz-clip-path: ellipse(150% 95% at top);
+    background-image: url(../images/dummy/img-shaan-banner-bg.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 .banner-box-clip .banner-caption h1 {
