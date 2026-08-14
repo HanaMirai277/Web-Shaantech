@@ -678,6 +678,119 @@
     background-position: right center
 }
 
+.about-profile {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    background-attachment: scroll;
+    background-size: 75%;
+    right: 10%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.visi-misi-section {
+    padding: 45px 0 60px;
+    background-image: url('../../../../userfiles/post/bg-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.visi-misi-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.visi-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.visi-section h3,
+.misi-section h3 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 18px;
+    line-height: 1.2;
+}
+
+.visi-box {
+    border: 4px solid #ffffff;
+    border-radius: 24px;
+    padding: 28px 80px;
+}
+
+.visi-box p {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.misi-section {
+    margin-top: 20px;
+}
+
+.misi-section h3 {
+    margin-bottom: 40px;
+}
+
+.misi-section .row {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.misi-section .col-lg-6 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 35px;
+    display: flex;
+}
+
+.misi-box {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    border: 4px solid #ffffff;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 30px 45px 30px 40px;
+}
+
+.misi-box p {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.55;
+    max-width: 420px;
+    margin: 0;
+}
+
+.check-icon {
+    position: absolute;
+    top: -24px;
+    left: -24px;
+    width: 58px;
+    height: 58px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-icon i {
+    color: #6258d4;
+    font-size: 30px;
+}
+
 .brands-box {
     display: flex;
     width: 100%;
