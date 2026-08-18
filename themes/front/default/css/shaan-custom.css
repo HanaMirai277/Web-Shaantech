@@ -160,7 +160,11 @@ main.layout-page {
     padding: 8px 18px !important;
 }
 
-.navbar-mjk-mainmenu .nav-item.active .nav-link,
+.navbar-mjk-mainmenu .nav-item.active .nav-link {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
 .navbar-mjk-mainmenu .nav-link:hover {
     color: #a78bfa !important;
 }
@@ -170,42 +174,30 @@ main.layout-page {
     display: none !important;
 }
 
-/* toggle ID/EN jadi pill */
 .lang-toggle {
     display: flex;
     align-items: center;
-    gap: 8px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    padding: 3px;
+    gap: 0;
 }
 
 .lang-toggle-label {
-    color: rgba(255,255,255,0.6);
+    color: rgba(255,255,255,0.7);
     font-size: 13px;
     font-weight: 600;
     cursor: pointer;
+    padding: 4px 14px;
+    border-radius: 16px;
+    transition: all 0.2s ease;
 }
 
 .lang-toggle-label.active {
+    background-color: #6c28ff;
     color: #ffffff;
 }
 
 .lang-toggle-switch {
-    position: relative;
-    width: 40px;
-    height: 20px;
-    background-color: #6c28ff;
-    border-radius: 20px;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-.lang-toggle-knob {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 16px;
-    height: 16px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    transition: transform 0.2s ease;
+    display: none;
 }

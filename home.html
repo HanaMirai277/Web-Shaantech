@@ -183,14 +183,9 @@
                 <a href="javascript:void(0);" class="close"><i class="fas fa-times"></i></a>
             </div>
             <!-- begin.navbar header -->
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-row">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-row topbar-alt">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="themes/front/default/images/global/img-shaan-logo-black.png" alt="" title="" />
-                    </a>
-                    <button class="navbar-toggler finebody" type="button" data-toggle="collapse"
-                        data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
+                    <button class="navbar-toggler finebody" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar top-bar"></span>
                         <span class="icon-bar middle-bar"></span>
                         <span class="icon-bar bottom-bar"></span>
@@ -198,7 +193,7 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto ml-0 navbar-mjk-mainmenu">
                             <li class="nav-item ">
-                                <a class="nav-link" href="home.html" id="btn-beranda">Beranda</a>
+                                <a class="nav-link" href="home.html" id="btn-beranda">Beranda </a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="projects.html" id="btn-proyek">Portfolio</a>
@@ -216,20 +211,13 @@
                                 <a class="nav-link" href="blog.html" id="btn-blog">Blog</a>
                             </li>
                         </ul>
-                        <ul class="navbar-nav ml-auto mr-3 navbar-mjk-top">
-                            <li class="nav-item">
-                                <a class="nav-link nav-tel" href="https://wa.me/+6285186868807" title="phone">
-                                    <div><span>Hubungi Kami/WA</span> +6285186868807</div><i
-                                        class="fas fa-phone fa-flip-horizontal"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-mail" href="mailto:marketing@shaantech.com" title="mail">
-                                    <div class="btn btn-mjk btn-mjk-orange">Email Kami!</div>
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        
+                        <div class="lang-toggle" id="langSwitch">
+                            <span class="lang-toggle-label lang-toggle-label-id active" data-lang="id">ID</span>
+                            <button type="button" class="lang-toggle-switch" id="langToggleBtn" aria-label="Switch language">
+                            <span class="lang-toggle-knob"></span></button>
+                            <span class="lang-toggle-label lang-toggle-label-en" data-lang="en">EN</span>
+                        </div>
                     </div>
                 </div>
             </nav>
@@ -729,16 +717,21 @@
     <!-- end basic js in local -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.js'></script>
     <script>
-        $(document).ready(function () {
-            $('a[href="' + window.location.href + '"]').parent().addClass('active');
-            $('ul.dropdown-menu.child_check').each(function () {
-                // Jika tidak ada <li> di dalam <ul>, hapus <ul> tersebut
-                if ($(this).children('li').length === 0) {
-                    $(this).remove();
-                }
-            });
+    $(document).ready(function() {
+        $('a').each(function() {
+            var linkHref = $(this).attr('href');
+            if (linkHref && window.location.pathname.endsWith(linkHref)) {
+                $(this).parent().addClass('active');
+            }
         });
-    </script>
+        $('ul.dropdown-menu.child_check').each(function() {
+            // Jika tidak ada <li> di dalam <ul>, hapus <ul> tersebut
+            if ($(this).children('li').length === 0) {
+                $(this).remove();
+            }
+        });
+    });
+</script>
     <script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
     <script type='text/javascript'>
         (function ($) {

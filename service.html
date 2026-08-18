@@ -308,13 +308,8 @@
                         <div class="col-lg-6 footer-left">
                             <h4>PT. Shaantech Mitra Globalindo</h4>
                             <div class="footer-line"></div>
-                            <div class="footer-brand">
-                                <img src="themes/globals/favicon/shaantech-icon-32x32.png" alt="Logo Shaantech"
-                                    class="footer-logo-icon">
-
-                                <span class="footer-logo-text">
-                                    Shaantech
-                                </span>
+                            <div class="footer-brand" style="margin-bottom: 20px;">
+                                <img src="themes/globals/favicon/bckup-img-shaan-logo-black.png" width="200px" alt="Logo Shaantech" style="max-width: 100%; height: auto;">
                             </div>
                             <p>
                                 <strong>Didirikan pada tahun 2021,</strong>
@@ -432,16 +427,21 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.js'></script>
 
     <script>
-        $(document).ready(function() {
-            $('a[href="'+window.location.href+'"]').parent().addClass('active');
-            $('ul.dropdown-menu.child_check').each(function() {
-                // Jika tidak ada <li> di dalam <ul>, hapus <ul> tersebut
-                if ($(this).children('li').length === 0) {
-                    $(this).remove();
-                }
-            });
+    $(document).ready(function() {
+        $('a').each(function() {
+            var linkHref = $(this).attr('href');
+            if (linkHref && window.location.pathname.endsWith(linkHref)) {
+                $(this).parent().addClass('active');
+            }
         });
-    </script>
+        $('ul.dropdown-menu.child_check').each(function() {
+            // Jika tidak ada <li> di dalam <ul>, hapus <ul> tersebut
+            if ($(this).children('li').length === 0) {
+                $(this).remove();
+            }
+        });
+    });
+</script>
 
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
     <script type='text/javascript'>
