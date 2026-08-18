@@ -276,24 +276,28 @@
 }
 
 .whatsapp-box {
-    display: flex;
-    position: relative;
-    justify-content: flex-end
+    position: absolute;
+    right: 70px;
+    bottom: -35px;
+    z-index: 999;
 }
 
 .whatsapp-box a {
-    background-color: #25D366 !important;
-    border-radius: 50%;
-    width: 62px;
-    height: 62px;
+    width: 72px;
+    height: 72px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-.whatsapp-box img {
-    width: 62px;
-    height: 62px
+.whatsapp-box i {
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 1;
 }
 
 .half-section {
@@ -1398,7 +1402,7 @@
 }
 
 .bg-shadow {
-    background-image: url(../images/dummy/img-shaan-bg-silver.png);
+    background-image: url(../../../../userfiles/post/bg-3.webp);
     background-size: cover;
     background-attachment: fixed
 }
@@ -1858,7 +1862,7 @@
 .title-mitra-teknologi h3 {
     margin: 0 0 18px;
     color: #6258d4;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 800;
     line-height: 1.15;
     text-transform: uppercase;
@@ -1916,6 +1920,88 @@
     font-weight: 300;
     line-height: 1.7;
     text-align: left;
+}
+
+.mengapa-bisnis {
+    position: relative;
+    width: 100%;
+    min-height: 360px;
+    padding: 45px 20px 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.bg-mengapa-bisnis {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.container-mengapa-bisnis {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-mengapa-bisnis {
+    margin: 0 0 8px;
+}
+
+.title-mengapa-bisnis h3 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1.05;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.deskripsi-mengapa {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto 20px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.65;
+    text-align: center;
+}
+
+.benefit-mengapa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 4px;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+.benefit-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 48px;
+    padding: 7px 18px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 6px;
+    color: #14365d;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
 }
 
 .custom-footer {
