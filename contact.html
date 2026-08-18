@@ -114,6 +114,362 @@
         .section {
             padding: 50px 0 50px;
         }
+
+        /* ===== CONTACT PAGE SPECIFIC STYLES ===== */
+        
+        /* Contact Info Section */
+        .contact-info-wrapper {
+            padding: 60px 0 50px;
+        }
+
+        .contact-section-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #675eed;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .contact-section-title::before {
+            content: "";
+            width: 28px;
+            height: 2px;
+            background-color: #675eed;
+        }
+
+        .contact-main-heading {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+
+        .contact-main-subtext {
+            font-size: 15px;
+            color: #6b7280;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        /* Contact Cards */
+        .contact-info-card {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 28px;
+            height: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info-card:hover {
+            box-shadow: 0 8px 24px rgba(103, 94, 237, 0.12);
+            transform: translateY(-3px);
+        }
+
+        .contact-info-card .card-icon-wrapper {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            background: #f0effe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .contact-info-card .card-icon-wrapper i {
+            font-size: 20px;
+            color: #675eed;
+        }
+
+        .contact-info-card .card-label-text {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.3px;
+            text-transform: uppercase;
+            color: #9ca3af;
+            margin-bottom: 8px;
+        }
+
+        .contact-info-card .card-content-text {
+            font-size: 14px;
+            color: #111827;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .contact-info-card .card-content-text a {
+            color: #111827;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .contact-info-card .card-content-text a:hover {
+            color: #675eed;
+        }
+
+        .contact-social-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .contact-social-links a {
+            width: 36px;
+            height: 36px;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4b5563;
+            transition: all 0.2s ease;
+            text-decoration: none;
+        }
+
+        .contact-social-links a:hover {
+            background: #675eed;
+            border-color: #675eed;
+            color: #ffffff;
+        }
+
+        /* Map Embed */
+        .contact-map-embed {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+            height: 100%;
+            min-height: 280px;
+        }
+
+        .contact-map-embed iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 280px;
+            border: none;
+        }
+
+        /* Form Section */
+        .contact-form-wrapper {
+            padding: 60px 0 80px;
+            background: #f9fafb;
+        }
+
+        .contact-form-title {
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #675eed;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .contact-form-title::before {
+            content: "";
+            width: 28px;
+            height: 2px;
+            background-color: #675eed;
+        }
+
+        .contact-form-heading {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #111827;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .contact-form-subtext {
+            font-size: 15px;
+            color: #6b7280;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        /* Form Card */
+        .contact-form-container {
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        }
+
+        /* Form Controls - Contact Page Override */
+        .contact-form-container .form-group-mjk {
+            margin-bottom: 24px;
+        }
+
+        .contact-form-container .form-group-mjk label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .contact-form-container .form-control {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 11px 14px;
+            font-size: 14px;
+            color: #111827;
+            transition: all 0.2s ease;
+        }
+
+        .contact-form-container .form-control:focus {
+            background: #ffffff;
+            border-color: #675eed;
+            box-shadow: 0 0 0 3px rgba(103, 94, 237, 0.1);
+        }
+
+        .contact-form-container .form-control.error {
+            border-color: #ef4444;
+        }
+
+        .contact-form-container textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        /* Select2 Override */
+        .contact-form-container .select-mjk-box {
+            border: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
+            border-radius: 8px;
+            background: #f9fafb;
+        }
+
+        .contact-form-container .select-mjk-box .select2-container--default .select2-selection--single {
+            background: transparent;
+            border: none;
+            height: 40px;
+        }
+
+        .contact-form-container .select-mjk-box .select2-container--default .select2-selection--single .select2-selection__rendered {
+            line-height: 38px;
+            padding-left: 12px;
+            font-size: 14px;
+            color: #111827;
+        }
+
+        .contact-form-container .select-mjk-box .select2-container--default .select2-selection--single .select2-selection__arrow {
+            height: 38px;
+        }
+
+        /* reCAPTCHA */
+        .contact-form-container .captcha-box p {
+            font-size: 13px;
+            color: #6b7280;
+            margin-bottom: 12px;
+        }
+
+        /* Submit Button */
+        .contact-submit-btn {
+            background: #675eed;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            padding: 13px 36px;
+            border-radius: 8px;
+            border: none;
+            transition: all 0.2s ease;
+            width: 100%;
+        }
+
+        .contact-submit-btn:hover {
+            background: #4942a8;
+            box-shadow: 0 4px 14px rgba(103, 94, 237, 0.35);
+            transform: translateY(-1px);
+        }
+
+        .contact-submit-btn:focus {
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(103, 94, 237, 0.25);
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .contact-main-heading {
+                font-size: 1.75rem;
+            }
+            .contact-form-heading {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .contact-info-wrapper {
+                padding: 50px 0 40px;
+            }
+            .contact-form-wrapper {
+                padding: 50px 0 60px;
+            }
+            .contact-form-container {
+                padding: 32px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-main-heading {
+                font-size: 1.5rem;
+            }
+            .contact-form-heading {
+                font-size: 1.4rem;
+            }
+            .contact-map-embed {
+                min-height: 240px;
+                margin-top: 24px;
+            }
+            .contact-map-embed iframe {
+                min-height: 240px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-info-wrapper {
+                padding: 40px 0 30px;
+            }
+            .contact-form-wrapper {
+                padding: 40px 0 50px;
+            }
+            .contact-form-container {
+                padding: 24px 20px;
+            }
+            .contact-info-card {
+                padding: 22px 18px;
+            }
+            .contact-form-container .form-group-mjk {
+                margin-bottom: 20px;
+            }
+            .contact-main-heading {
+                font-size: 1.35rem;
+            }
+            .contact-form-heading {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (max-width: 375px) {
+            .contact-form-container {
+                padding: 20px 16px;
+            }
+            .contact-submit-btn {
+                padding: 12px 24px;
+                font-size: 13px;
+            }
+        }
     </style>
 
     <!-- Meta Pixel Code -->
@@ -210,7 +566,7 @@
         <main class="layout-page bg-shadow">
             <div class="layout-page ">
                 <section class="section-top bg-grey">
-                    <div class="banner-box banner-box-clip banner-half" style="background-image: url('userfiles/post/hero-section-2.jpeg')">
+                    <div class="banner-box banner-box-clip banner-half" style="background-image: url('userfiles/post/banner-hero-4.png')">
                         <div class="banner-caption">
                             <div class="container">
                                 <div class="row">
@@ -238,152 +594,111 @@
                     </div>
                 </section>
 
-                <section class="section bg-grey">
+                <section class="contact-info-wrapper bg-grey">
                     <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-lg-4 mb-4">
-                                <div class="company-box">
-                                    <b>
-                                        <p>Company</p>
-                                    </b>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-4">
-                                <div class="location-box">
-                                    <p>PT Shaantech Mitra Globalindo</p>
-                                    <p>Perum. Kedungrandu Regency, Blok L16</p>
-                                    <p>Kedungrandu, Kec. Patikraja, Kabupaten Banyumas, Jawa Tengah - Indonesia 53171</p>
-                                    <a href="https://maps.app.goo.gl/BbypWfxC4kDCq1rU6" role="button" class="d-flex align-items-center effect-rotate" target="_blank">
-                                        <div class="btn btn-mjk btn-circle btn-bg-darkgrey effect-rotate mr-3"><i class="fas fa-chevron-right"></i></div> Lihat Peta                    </a>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-4">
-                                <div class="contact-box">
-                                    <div class="row form-text-group">
-                                        <div class="col-sm-6 form-text-label"><label><b>Marketing</b></label></div>
-                                        <div class="col-sm-6 form-text-desc">
-                                            <p><a href="https://wa.me/+62811111111?text=Halo PT Shaantech Mitra Globalindo, saya hendak bertanya mengenai website & mobile apps development" title="" target="_blank"> +628112640811 (WA/Call)</a></p>
-                                            <p><a href="#" title="" target=""> marketing@shaantech.com </a></p>
-                                        </div>
-                                    </div>
-                                </div>
+                        
+                        <!-- Section Header -->
+                        <div class="row mb-5">
+                            <div class="col-12 col-lg-8">
+                                <div class="contact-section-title">Hubungi Kami</div>
+                                <h2 class="contact-main-heading">PT. Shaantech Mitra Globalindo</h2>
+                                <p class="contact-main-subtext">Kami siap membantu bisnis Anda bertransformasi secara digital. Hubungi kami melalui salah satu saluran di bawah ini.</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-12 col-lg-4">
-                                <div class="brand-circle">
-                                    <img src="themes/front/default//images/global/logo-circle.png" alt="logo-brand-circle" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section class="section">
-                    <div class="container">
-                        <div class="row mb-4">
-                            <div class="col-12 col-lg-4">
-                            </div>
-                            
-                            <div class="col-12 col-lg-6">
-                                <div class="title-primary title-main mb-4 mt-5">
-                                    <h5>Hubungi Kami</h5>
-                                </div>
-                                <div class="title-primary pd-l-55 center">
-                                    <h3 class="mb-3">Punya pertanyaan mengenai SHAANTECH?</h3>
-                                    <p>Silakan isi form di bawah ini dan kami akan segera menghubungi Anda kembali. </p>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Contact Cards + Map -->
                         <div class="row">
-                            <div class="col-12 col-lg-4">
+                            
+                            <!-- Left Column: Contact Cards -->
+                            <div class="col-12 col-lg-6 mb-4">
+                                <div class="row">
+                                    
+                                    <!-- Address Card -->
+                                    <div class="col-12 mb-4">
+                                        <div class="contact-info-card">
+                                            <div class="card-icon-wrapper">
+                                                <i class="fas fa-map-marker-alt"></i>
+                                            </div>
+                                            <div class="card-label-text">Alamat Kantor</div>
+                                            <p class="card-content-text">
+                                                Perum. Kedungrandu Regency, Blok L16,<br>
+                                                Kedungrandu, Kec. Patikraja,<br>
+                                                Kabupaten Banyumas, Jawa Tengah - Indonesia 53171
+                                            </p>
+                                            <a href="https://maps.app.goo.gl/cR7fYr9huuQUPqhw5" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#675eed;text-decoration:none;margin-top:12px;">
+                                                <i class="fas fa-external-link-alt" style="font-size:11px;"></i> Lihat di Google Maps
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- WhatsApp Card -->
+                                    <div class="col-12 col-sm-6 mb-4">
+                                        <div class="contact-info-card">
+                                            <div class="card-icon-wrapper">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </div>
+                                            <div class="card-label-text">WhatsApp / Telepon</div>
+                                            <p class="card-content-text">
+                                                <a href="https://wa.me/+6285186868807?text=Halo PT Shaantech Mitra Globalindo, saya hendak bertanya mengenai website & mobile apps development" target="_blank">
+                                                    +62 851-8686-8807
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Email Card -->
+                                    <div class="col-12 col-sm-6 mb-4">
+                                        <div class="contact-info-card">
+                                            <div class="card-icon-wrapper">
+                                                <i class="fas fa-envelope"></i>
+                                            </div>
+                                            <div class="card-label-text">Email</div>
+                                            <p class="card-content-text">
+                                                <a href="mailto:marketing@shaantech.com">
+                                                    marketing@shaantech.com
+                                                </a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Social Media Card -->
+                                    <div class="col-12 mb-4">
+                                        <div class="contact-info-card">
+                                            <div class="card-icon-wrapper">
+                                                <i class="fas fa-share-alt"></i>
+                                            </div>
+                                            <div class="card-label-text">Media Sosial</div>
+                                            <div class="contact-social-links">
+                                                <a href="#" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                                                <a href="#" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                                                <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                                <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                                            </div>
+                                            <p class="card-content-text mt-2" style="font-size:13px;color:#6b7280;">shaantech25</p>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-                            <div class="col-12 col-lg-6">
-                                <form id="form-contacts" method="post" action="#" novalidate="novalidate">
-                                    <div class="row">
-                                        <input type="hidden" name="3tDZ5azxX1kvKqplXHt8GHC7" value="e041cb9326e587ce45ff9747d4418693">
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group form-group-mjk">
-                                                <label for="name-first">Nama Depan*</label>
-                                                <input type="text" class="form-control" id="name-first" name="name_first" required="">
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-lg-6">
-                                            <div class="form-group form-group-mjk">
-                                                <label for="name-last">Nama Belakang*</label>
-                                                <input type="text" class="form-control" id="name-last" name="name_last" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group form-group-mjk">
-                                                <label for="company">Nama Perusahaan</label>
-                                                <input type="text" class="form-control" id="company" name="company">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group form-group-mjk">
-                                                <label for="phone">Phone</label>
-                                                <input type="text" class="form-control" id="phone" name="phone">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group form-group-mjk">
-                                                <label for="phone">Phone/WA*</label>
-                                                <input type="text" class="form-control" id="whatsapp" name="whatsapp" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group form-group-mjk">
-                                                <label for="email">Alamat Email*</label>
-                                                <input type="email" class="form-control" id="email" name="email" required="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group form-group-mjk">
-                                                <label for="phone">Tipe Proyek*</label>
-                                                <div class="select-mjk-box">
-                                                    <select class="select-mjk" name="querytype" id="querytype" placeholder="Project type" data-placeholder="Choose" required>
-                                                        <option disabled="" selected="">Pilih</option>
-                                                        <option value="Perorangan/Pribadi">Perorangan/Pribadi</option>
-                                                        <option value="Perusahaan 1-10 karyawan">Perusahaan 1-10 karyawan</option>
-                                                        <option value="Perusahaan 11-50 karyawan">Perusahaan 11-50 karyawan</option>
-                                                        <option value="Perusahaan > 51 karyawan">Perusahaan > 51 karyawan</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="form-group form-group-mjk">
-                                                <label for="message">Pesan*</label>
-                                                <textarea class="form-control" rows="3" id="message" name="message" autocomplete="off" required=""></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="captcha-box">
-                                                <p>Please tick the box to continue:</p>
-                                                <div class="mt-3 mb-5">
-                                                    <label id="warning_label" style="display:none">Please completed the capthca!</label>
-                                                    <div class="g-recaptcha" data-sitekey="6LfD-QYaAAAAACwnS02F4Dv1pVHVaAjd8yLCDujO"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-2 mb-2">
-                                            <button type="Submit" class="btn btn-mjk btn-bg-softblue" id="btn-submit-contact" title="submit">KIRIM PESAN</button>
-                                        </div>
-                                    </div>
-                                </form>
+
+                            <!-- Right Column: Google Maps -->
+                            <div class="col-12 col-lg-6 mb-4">
+                                <div class="contact-map-embed">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.261907727402!2d109.22001917409315!3d-7.472209673238641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655d928428d481%3A0x9a4f144ad8d806c2!2sShaantech!5e0!3m2!1sid!2sid!4v1723945986542!5m2!1sid!2sid"
+                                        width="100%" 
+                                        height="450" 
+                                        style="border:0;" 
+                                        allowfullscreen="" 
+                                        loading="lazy" 
+                                        referrerpolicy="no-referrer-when-downgrade"
+                                        title="Lokasi PT Shaantech Mitra Globalindo">
+                                    </iframe>
+                                </div>
                             </div>
+
                         </div>
+
                     </div>
                 </section>
             </div>
