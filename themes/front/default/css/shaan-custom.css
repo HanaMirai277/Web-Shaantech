@@ -1,19 +1,72 @@
-.pagination .page-item .page-link[rel=next]{border-top-right-radius:50%;border-bottom-right-radius:50%;margin-left:5px}.pagination .page-item .page-link[rel=next]:hover{background-color:grey}.page-item .page-link[rel=next]{background-color:grey}.pagination .page-item .page-link[rel=prev]{border-top-left-radius:50%;border-bottom-left-radius:50%;margin-left:5px}.pagination .page-item .page-link[rel=prev]:hover{background-color:grey}.page-item .page-link[rel=prev]{background-color:grey}.pagination .page-item:last-child .page-link:hover{background-color:rgba(255,255,255,0)}.location-box p{margin-bottom:0}.location-box p:nth-last-of-type(1){margin-bottom:1rem}.banner-box-contact .title-main{display:flex;align-items:center;position:relative;padding:0;top:8px;left:0}.banner-box-contact .banner-caption h3{line-height:1.5;margin-bottom:60px;font-weight:400;text-indent:0}.banner-box-contact .mb-4{margin-bottom:1rem!important}.select2-container--default .select2-selection--single .select2-selection__arrow b{margin-top:-5px}
+.pagination .page-item .page-link[rel="next"] {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  margin-left: 5px;
+}
+.pagination .page-item .page-link[rel="next"]:hover {
+  background-color: grey;
+}
+.page-item .page-link[rel="next"] {
+  background-color: grey;
+}
+.pagination .page-item .page-link[rel="prev"] {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  margin-left: 5px;
+}
+.pagination .page-item .page-link[rel="prev"]:hover {
+  background-color: grey;
+}
+.page-item .page-link[rel="prev"] {
+  background-color: grey;
+}
+.pagination .page-item:last-child .page-link:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+.location-box p {
+  margin-bottom: 0;
+}
+.location-box p:nth-last-of-type(1) {
+  margin-bottom: 1rem;
+}
+.banner-box-contact .title-main {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0;
+  top: 8px;
+  left: 0;
+}
+.banner-box-contact .banner-caption h3 {
+  line-height: 1.5;
+  margin-bottom: 60px;
+  font-weight: 400;
+  text-indent: 0;
+}
+.banner-box-contact .mb-4 {
+  margin-bottom: 1rem !important;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  margin-top: -5px;
+}
 
 .article .article-title {
-    font-size: 1.75rem;
-    font-weight: bold;
+  font-size: 1.75rem;
+  font-weight: bold;
 }
 
 .article h4 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 .article h3 {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 .article h2 {
-    font-size: 1.35rem;
+  font-size: 1.35rem;
 }
 
 /* .title-main:after {
@@ -27,14 +80,45 @@
 } */
 
 .breadcrumb-shaan .breadcrumb .breadcrumb-item.active {
-    text-shadow: 0 0 0.35px #eee, 0 0 0.35px #333;
+  text-shadow:
+    0 0 0.35px #eee,
+    0 0 0.35px #333;
 }
 
 .breadcrumb-item.active > a {
-    /*font-weight: 400;*/
-    font-weight: bold;
+  /*font-weight: 400;*/
+  font-weight: bold;
 }
 
 main.layout-page {
-    padding-top: 75px;
+  padding-top: 75px;
+}
+
+/* = INFORMASI PEMESANAN
+------------------------------------------------------------ */
+.info-pesan-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #6c5ce7;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+}
+
+.info-pesan-icon {
+    font-size: 24px;
+    color: #6c5ce7;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.info-pesan-text h5 {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.info-pesan-text p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #555;
 }
