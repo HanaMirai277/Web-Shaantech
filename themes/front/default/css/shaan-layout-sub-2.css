@@ -47,16 +47,133 @@
     max-width: 100%
 }
 
-.banner-box-clip {
+.banner-box-hero {
     height: calc(100vh - 156px);
-    clip-path: ellipse(150% 95% at top);
-    -webkit-clip-path: ellipse(150% 95% at top);
-    -moz-clip-path: ellipse(150% 95% at top);
-    background-image: url(../images/dummy/img-shaan-banner-bg.jpg);
+    clip-path: none;
+    -webkit-clip-path: none;
+    -moz-clip-path: none;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
-    background-attachment: fixed;
+    background-attachment: scroll;
+}
+
+.nilai-shaantech-section {
+    background-color: #f5f5f5;
+    padding: 45px 0 0;
+    overflow: hidden;
+}
+
+.nilai-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nilai-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 40px;
+}
+
+.nilai-list::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 14%;
+    right: 14%;
+    height: 5px;
+    background-color: #6258d4;
+    z-index: 1;
+}
+
+.nilai-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    z-index: 2;
+}
+
+.nilai-icon {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #6258d4;
+}
+
+.nilai-icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.nilai-item h4 {
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #2f4059;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mengapa-shaantech {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    position: relative;
+    background-color: white;
+}
+
+.mengapa-shaantech img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
+}
+
+.gallery-section {
+    background: #ffffff;
+    padding: 70px 0 60px;
+}
+
+.gallery-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.gallery-title h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #5c57bd;
+    margin: 0;
+}
+
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-card {
+    height: 130px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #5c57bd;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .banner-box-clip .banner-caption h1 {
@@ -162,6 +279,16 @@
     display: flex;
     position: relative;
     justify-content: flex-end
+}
+
+.whatsapp-box a {
+    background-color: #25D366 !important;
+    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .whatsapp-box img {
@@ -677,6 +804,123 @@
     top: 0;
     background-repeat: no-repeat;
     background-position: right center
+}
+
+.about-profile {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    background-attachment: scroll;
+    background-size: 75%;
+    right: 10%;
+    top: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.visi-misi-section {
+    padding: 45px 0 60px;
+    background-image: url('../../../../userfiles/post/bg-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.visi-misi-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.visi-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.visi-section h3,
+.misi-section h3 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 18px;
+    line-height: 1.2;
+}
+
+.visi-box {
+    max-width: 900px;
+    margin: 0 auto;
+    border: 3px solid #ffffff;
+    border-radius: 24px;
+    padding: 22px 50px;
+}
+
+.visi-box p {
+    max-width: 580px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.6;
+    color: white;
+}
+
+.misi-section {
+    margin-top: 20px;
+}
+
+.misi-section h3 {
+    margin-bottom: 40px;
+}
+
+.misi-section .row {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.misi-section .col-lg-6 {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 35px;
+    display: flex;
+}
+
+.misi-box p {
+    max-width: 650px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 1.6;
+    color: white;
+}
+
+.misi-box {
+    position: relative;
+    height: 120px;
+    border: 3px solid #ffffff;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    padding: 20px 35px 20px 55px;
+    margin-bottom: 25px;
+}
+
+.check-icon {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5b57c8;
+    font-size: 26px;
+}
+
+.check-icon i {
+    color: #6258d4;
+    font-size: 30px;
 }
 
 .brands-box {
@@ -1600,4 +1844,182 @@
     transform: translateY(40px);
     -webkit-transform: translateY(40px);
     -moz-transform: translateY(40px)
+}
+
+.mitra-teknologi {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 55px 20px 30px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.title-mitra-teknologi h3 {
+    margin: 0 0 18px;
+    color: #6258d4;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+
+.mitra-teknologi p {
+    margin: 0 auto;
+    max-width: 760px;
+    color: #444444;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.content-beranda {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 15px 20px 70px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.content-beranda > div {
+    background: #6258d4;
+    border-radius: 9px;
+    padding: 12px 22px 20px;
+    color: #ffffff;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.content-beranda > div h3 {
+    margin: 0 0 10px;
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.content-beranda > div img {
+    display: block;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin: 0 0 12px;
+    border: 2px solid #ffffff;
+    border-radius: 9px;
+}
+
+.content-beranda > div p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.custom-footer {
+    background: #f4f4f6;
+}
+
+.footer-main {
+    padding: 24px 0 0px;
+}
+
+.footer-left,
+.footer-right {
+    padding-top: 10px;
+}
+
+.custom-footer h4 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.footer-line {
+    width: 32px;
+    height: 3px;
+    background: #999;
+    margin-bottom: 15px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo-icon {
+    width: 72px;
+    height: auto;
+    object-fit: contain;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    width: 310px;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-left p {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #3f3f3f;
+    font-weight: 400;
+}
+
+.footer-right {
+    padding-left: 80px;
+}
+
+.footer-info {
+    margin-bottom: 25px;
+}
+
+.footer-info p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
+.contact-wa {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-wa i {
+    font-size: 30px;
+    color: #333;
+}
+
+.contact-wa span {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.contact-wa span a {
+    font-size: 18px;
+     color: #333;
+}
+
+.footer-copyright {
+    background: #203a5b;
+    text-align: center;
+    padding: 12px;
+}
+
+.footer-copyright p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 300;
 }
