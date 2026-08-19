@@ -2128,9 +2128,10 @@
 }
 
 .contact-map {
-    width: 42%;
+    width: 48%;
     min-height: 380px;
     overflow: hidden;
+    margin-left: 160px;
 }
 
 .contact-map iframe {
