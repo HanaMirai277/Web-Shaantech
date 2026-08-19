@@ -114,6 +114,359 @@
         .section {
             padding: 50px 0 50px;
         }
+        .shv2-header {
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+}
+
+.shv2-topbar {
+    height: 45px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.shv2-topbar-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shv2-toplinks {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.shv2-toplinks li {
+    margin: 0;
+    padding: 0;
+}
+
+.shv2-toplinks a {
+    color: #555;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.shv2-toplinks a:hover,
+.shv2-toplinks .active a {
+    color: #6257e8;
+    text-decoration: none;
+}
+
+.shv2-lang {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.shv2-lang a {
+    color: #777;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.shv2-lang a.active {
+    color: #6257e8;
+}
+
+.shv2-midbar {
+    height: 120px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.shv2-midbar-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shv2-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.shv2-social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.shv2-social-icons a {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #7065e8;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.shv2-social-icons a:hover {
+    background: #6257e8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.shv2-handle {
+    margin-top: 6px;
+    color: #7065e8;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.shv2-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shv2-logo img {
+    max-width: 180px;
+    height: auto;
+}
+
+.shv2-wa-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 25px;
+    border-radius: 30px;
+    background: #7065e8;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.shv2-wa-btn:hover {
+    background: #6257e8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.shv2-megabar {
+    height: 88px;
+    background: #6257e8;
+    padding: 0;
+}
+
+.shv2-megabar-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shv2-meganav {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shv2-meganav > li {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.shv2-meganav > li > a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    white-space: nowrap;
+}
+
+.shv2-meganav > li > a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.shv2-meganav .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+    margin: 0;
+    padding: 8px 0;
+    background: #fff;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+    display: none;
+    z-index: 9999;
+}
+
+.shv2-meganav .dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
+.shv2-meganav .dropdown-menu li {
+    list-style: none;
+}
+
+.shv2-meganav .dropdown-menu .dropdown-item {
+    display: block;
+    padding: 10px 18px;
+    color: #222;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.shv2-meganav .dropdown-menu .dropdown-item:hover {
+    background: #f1efff;
+    color: #6257e8;
+}
+
+.shv2-toggler {
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .shv2-topbar {
+        height: 40px;
+    }
+
+    .shv2-toplinks {
+        gap: 15px;
+    }
+
+    .shv2-toplinks a {
+        font-size: 10px;
+    }
+
+    .shv2-midbar {
+        height: 90px;
+    }
+
+    .shv2-logo img {
+        max-width: 140px;
+    }
+
+    .shv2-social {
+        display: none;
+    }
+
+    .shv2-wa-btn {
+        padding: 10px 16px;
+        font-size: 13px;
+    }
+
+    .shv2-megabar {
+        height: auto;
+        min-height: 60px;
+    }
+
+    .shv2-megabar-inner {
+        justify-content: flex-end;
+        min-height: 60px;
+    }
+
+    .shv2-toggler {
+        display: block;
+        border: none;
+        background: transparent;
+        color: #fff;
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .shv2-megabar .navbar-collapse {
+        background: #6257e8;
+        width: 100%;
+    }
+
+    .shv2-meganav {
+        flex-direction: column;
+        align-items: stretch;
+        height: auto;
+    }
+
+    .shv2-meganav > li {
+        width: 100%;
+        height: auto;
+    }
+
+    .shv2-meganav > li > a {
+        min-height: 50px;
+        padding: 12px 20px;
+    }
+
+    .shv2-meganav .dropdown-menu {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .shv2-meganav .dropdown:hover > .dropdown-menu {
+        display: none;
+    }
+
+    .shv2-meganav .dropdown.show > .dropdown-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .shv2-toplinks {
+        gap: 10px;
+    }
+
+    .shv2-toplinks li:nth-child(5),
+    .shv2-toplinks li:nth-child(6) {
+        display: none;
+    }
+
+    .shv2-lang {
+        margin-left: auto;
+    }
+
+    .shv2-midbar-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .shv2-logo img {
+        max-width: 125px;
+    }
+
+    .shv2-wa-btn {
+        padding: 9px 12px;
+        font-size: 11px;
+    }
+
+    .shv2-wa-btn span {
+        display: none;
+    }
+
+    .shv2-meganav > li > a {
+        font-size: 14px;
+    }
+}
     </style>
 
     <!-- Meta Pixel Code -->
@@ -147,7 +500,7 @@
             </div>
         </div>
 
-        <!-- function class active on mainmenu -->
+       <!-- function class active on mainmenu -->
         <header id="headertop">
             <div id="search-body" class="search-body">
                 <form role="search" action="index.php?pages=search" method="post">
@@ -155,13 +508,9 @@
                 </form>
                 <a href="javascript:void(0);" class="close"><i class="fas fa-times"></i></a>
             </div>
-
             <!-- begin.navbar header -->
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-row">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-row topbar-alt">
                 <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="themes/front/default/images/global/img-shaan-logo-black.png" alt="" title="" />
-                    </a>
                     <button class="navbar-toggler finebody" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="icon-bar top-bar"></span>
                         <span class="icon-bar middle-bar"></span>
@@ -170,207 +519,121 @@
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto ml-0 navbar-mjk-mainmenu">
                             <li class="nav-item ">
-                                <a class="nav-link" href="home.html" id="btn-beranda">Beranda</a>
+                                <a class="nav-link" href="home.html" id="btn-beranda">Beranda </a>
                             </li>
                             <li class="nav-item ">
-                                <a class="nav-link" href="projects.html" id="btn-proyek">Proyek</a>
-                            </li>
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link" href="service.html">Layanan</a>
-                                <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="caret-mjk-desktop">
-                                        <i class="fas fa-chevron-down"></i>
-                                    </span>
-                                    <span class="caret-mjk-mobile">
-                                        <i class="fas fa-plus"></i>
-                                        <i class="fas fa-minus"></i>
-                                    </span>
-                                </a>
-                                <ul class="dropdown-menu shadow" aria-labelledby="menudda1">
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" href="#">Pengembangan Website</a>
-                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret-mjk-desktop">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </span>
-                                            <span class="caret-mjk-mobile">
-                                                <i class="fas fa-plus"></i>
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </a>
-                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret-mjk-desktop">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </span>
-                                            <span class="caret-mjk-mobile">
-                                                <i class="fas fa-plus"></i>
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </a>
-                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret-mjk-desktop">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </span>
-                                            <span class="caret-mjk-mobile">
-                                                <i class="fas fa-plus"></i>
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </a>
-                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret-mjk-desktop">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </span>
-                                            <span class="caret-mjk-mobile">
-                                                <i class="fas fa-plus"></i>
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </a>
-                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret-mjk-desktop">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </span>
-                                            <span class="caret-mjk-mobile">
-                                                <i class="fas fa-plus"></i>
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </a>
-                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11">
-                                            <li><a class="dropdown-item" href="website-company-profile.html">Website Company Profile</a></li>
-                                            <li><a class="dropdown-item" href="website-perusahaan-tbk.html">Website Perusahaan Tbk</a></li>
-                                            <li><a class="dropdown-item" href="website-e-commerce.html">Website E-Commerce</a></li>
-                                            <li><a class="dropdown-item" href="website-custom.html">Website Custom</a></li>
-                                            <li><a class="dropdown-item" href="erp-custom.html">ERP Kustom</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" href="#">Digital Marketing</a>
-                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret-mjk-desktop">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </span>
-                                            <span class="caret-mjk-mobile">
-                                                <i class="fas fa-plus"></i>
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </a>
-                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret-mjk-desktop">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </span>
-                                            <span class="caret-mjk-mobile">
-                                                <i class="fas fa-plus"></i>
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </a>
-                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret-mjk-desktop">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </span>
-                                            <span class="caret-mjk-mobile">
-                                                <i class="fas fa-plus"></i>
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </a>
-                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret-mjk-desktop">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </span>
-                                            <span class="caret-mjk-mobile">
-                                                <i class="fas fa-plus"></i>
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </a>
-                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret-mjk-desktop">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </span>
-                                            <span class="caret-mjk-mobile">
-                                                <i class="fas fa-plus"></i>
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </a>
-                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11">
-                                            <li><a class="dropdown-item" href="manajemen-media-sosial.html">Manajemen Media Sosial </a></li>
-                                            <li><a class="dropdown-item" href="optimasi-google-bisnis-dan-google-maps.html">Optimasi Google Bisnis dan Google Maps</a></li>
-                                            <li><a class="dropdown-item" href="performance-marketing.html">Performance Marketing</a></li>
-                                            <li><a class="dropdown-item" href="seo.html">SEO</a></li>
-                                            <li><a class="dropdown-item" href="iklan-marketplace.html">Iklan Marketplace</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" href="#">Pembuatan Sales Funel</a>
-                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret-mjk-desktop">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </span>
-                                            <span class="caret-mjk-mobile">
-                                                <i class="fas fa-plus"></i>
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </a>
-                                        <a href="javascript:void(0);" class="caret-mjk-box dropdown-toggle" id="menudda10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="caret-mjk-desktop">
-                                                <i class="fas fa-chevron-right"></i>
-                                            </span>
-                                            <span class="caret-mjk-mobile">
-                                                <i class="fas fa-plus"></i>
-                                                <i class="fas fa-minus"></i>
-                                            </span>
-                                        </a>
-                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11">
-                                            <li><a class="dropdown-item" href="pembuatan-landing-page.html">Pembuatan Landing Page</a></li>
-                                            <li><a class="dropdown-item" href="pengembangan-web-sales-funel.html">Pengembangan Web Sales Funel</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" href="pengembangan-aplikasi-android-dan-ios-custom.html">Pengembangan Aplikasi Android dan iOS Custom</a>
-                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11"></ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" href="pembuatan-konten.html">Pembuatan Konten</a>
-                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11"></ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" href="desain-grafis.html">Desain Grafis</a>
-                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11"></ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" href="maintenance-website-dan-mobile-apps.html">Maintenance Website dan Mobile Apps</a>
-                                        <ul class="dropdown-menu shadow child_check" aria-labelledby="11"></ul>
-                                    </li>
-                                </ul>
+                                <a class="nav-link" href="projects.html" id="btn-proyek">Portfolio</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="about.html" id="btn-tentang">Tentang</a>
                             </li>
-                            <!-- <li class="nav-item ">
-                                <a class="nav-link" href="#" id="btn-karir">Karir</a>
-                            </li> -->
                             <li class="nav-item ">
                                 <a class="nav-link" href="contact.html" id="btn-kontak-1">Kontak</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">Alur Kerja</a>
                             </li>
                             <li class="nav-item ">
                                 <a class="nav-link" href="blog.html" id="btn-blog">Blog</a>
                             </li>
                         </ul>
-                        <ul class="navbar-nav ml-auto mr-3 navbar-mjk-top">
-                            <li class="nav-item">
-                                <a class="nav-link nav-tel" href="https://wa.me/+6285186868807" title="phone">
-                                    <div><span>Hubungi Kami/WA</span> +6285186868807</div><i class="fas fa-phone fa-flip-horizontal"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-mail" href="mailto:marketing@shaantech.com" title="mail">
-                                    <div class="btn btn-mjk btn-mjk-orange">Email Kami!</div>
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                            </li>
-                        </ul>
+                        
+                        <div class="lang-toggle" id="langSwitch">
+                            <span class="lang-toggle-label lang-toggle-label-id active" data-lang="id">ID</span>
+                            <button type="button" class="lang-toggle-switch" id="langToggleBtn" aria-label="Switch language">
+                            <span class="lang-toggle-knob"></span></button>
+                            <span class="lang-toggle-label lang-toggle-label-en" data-lang="en">EN</span>
+                        </div>
                     </div>
                 </div>
             </nav>
             <!-- end.navbar header -->
         </header>
+
+            <div class="shv2-midbar">
+                <div class="container shv2-midbar-inner">
+                    <div class="shv2-social">
+                        <div class="shv2-social-icons">
+                            <a href="https://youtube.com/@shaantech25" target="_blank" rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="https://tiktok.com/@shaantech25" target="_blank" rel="noopener" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://facebook.com/shaantech25" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com/shaantech25" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <span class="shv2-handle">shaantech25</span>
+                    </div>
+
+                    <a href="home.html" class="shv2-logo">
+                        <img src="themes/front/default/images/global/img-shaan-logo-black.png" alt="Shaantech" title="Shaantech" />
+                    </a>
+
+                    <a href="https://wa.me/+6285186868807" target="_blank" rel="noopener" class="shv2-wa-btn">
+                        <i class="fab fa-whatsapp"></i> <span>YUK! KONSULTASI</span>
+                    </a>
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg shv2-megabar">
+                <div class="container shv2-megabar-inner">
+                    <button class="navbar-toggler shv2-toggler" type="button" data-toggle="collapse"
+                        data-target="#shv2MegaCollapse" aria-controls="shv2MegaCollapse" aria-expanded="false"
+                        aria-label="Toggle menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="shv2MegaCollapse">
+                        <ul class="shv2-meganav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">WEBSITE</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="website-company-profile.html">Website Company Profile</a></li>
+                                    <li><a class="dropdown-item" href="website-perusahaan-tbk.html">Website Perusahaan Tbk</a></li>
+                                    <li><a class="dropdown-item" href="website-e-commerce.html">Website E-Commerce</a></li>
+                                    <li><a class="dropdown-item" href="website-custom.html">Website Custom</a></li>
+                                    <li><a class="dropdown-item" href="erp-custom.html">ERP Kustom</a></li>
+                                    <li><a class="dropdown-item" href="pembuatan-landing-page.html">Pembuatan Landing Page</a></li>
+                                    <li><a class="dropdown-item" href="pengembangan-web-sales-funel.html">Pengembangan Web Sales Funel</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">APLIKASI</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="pengembangan-aplikasi-android-dan-ios-custom.html">Pengembangan Aplikasi Android &amp; iOS Custom</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">AI INTEGRATION</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="service.html">Integrasi AI</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">DIGITAL MARKETING</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="manajemen-media-sosial.html">Manajemen Media Sosial</a></li>
+                                    <li><a class="dropdown-item" href="optimasi-google-bisnis-dan-google-maps.html">Optimasi Google Bisnis &amp; Google Maps</a></li>
+                                    <li><a class="dropdown-item" href="performance-marketing.html">Performance Marketing</a></li>
+                                    <li><a class="dropdown-item" href="seo.html">SEO</a></li>
+                                    <li><a class="dropdown-item" href="iklan-marketplace.html">Iklan Marketplace</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">CREATIVE DESIGN</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="desain-grafis.html">Desain Grafis</a></li>
+                                    <li><a class="dropdown-item" href="pembuatan-konten.html">Pembuatan Konten</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">TECHNICAL SUPPORT</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="maintenance-website-dan-mobile-apps.html">Maintenance Website &amp; Mobile Apps</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
         <main class="layout-page bg-shadow">
             <div class="layout-page ">
                 <section class="section-top">

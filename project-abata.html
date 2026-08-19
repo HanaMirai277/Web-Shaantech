@@ -467,9 +467,72 @@
                 font-size: 13px;
             }
         }
-        .shv2-midbar {
+     .shv2-header {
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+}
+
+.shv2-topbar {
+    height: 45px;
     background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.shv2-topbar-inner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shv2-toplinks {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.shv2-toplinks li {
+    margin: 0;
+    padding: 0;
+}
+
+.shv2-toplinks a {
+    color: #555;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.shv2-toplinks a:hover,
+.shv2-toplinks .active a {
+    color: #6257e8;
+    text-decoration: none;
+}
+
+.shv2-lang {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.shv2-lang a {
+    color: #777;
+    font-size: 11px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.shv2-lang a.active {
+    color: #6257e8;
+}
+
+.shv2-midbar {
     height: 120px;
+    background: #fff;
     border-bottom: 1px solid #eee;
 }
 
@@ -504,6 +567,12 @@
     text-decoration: none;
 }
 
+.shv2-social-icons a:hover {
+    background: #6257e8;
+    color: #fff;
+    text-decoration: none;
+}
+
 .shv2-handle {
     margin-top: 6px;
     color: #7065e8;
@@ -532,9 +601,11 @@
     color: #fff;
     text-decoration: none;
     font-weight: 700;
+    font-size: 14px;
 }
 
 .shv2-wa-btn:hover {
+    background: #6257e8;
     color: #fff;
     text-decoration: none;
 }
@@ -628,6 +699,18 @@
 }
 
 @media (max-width: 991.98px) {
+    .shv2-topbar {
+        height: 40px;
+    }
+
+    .shv2-toplinks {
+        gap: 15px;
+    }
+
+    .shv2-toplinks a {
+        font-size: 10px;
+    }
+
     .shv2-midbar {
         height: 90px;
     }
@@ -701,6 +784,42 @@
     }
 }
 
+@media (max-width: 575.98px) {
+    .shv2-toplinks {
+        gap: 10px;
+    }
+
+    .shv2-toplinks li:nth-child(5),
+    .shv2-toplinks li:nth-child(6) {
+        display: none;
+    }
+
+    .shv2-lang {
+        margin-left: auto;
+    }
+
+    .shv2-midbar-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .shv2-logo img {
+        max-width: 125px;
+    }
+
+    .shv2-wa-btn {
+        padding: 9px 12px;
+        font-size: 11px;
+    }
+
+    .shv2-wa-btn span {
+        display: none;
+    }
+
+    .shv2-meganav > li > a {
+        font-size: 14px;
+    }
+}
     </style>
 
     <!-- Meta Pixel Code -->
@@ -735,25 +854,54 @@
         </div>
 
         <!-- function class active on mainmenu -->
-        <header id="headertop" class="shv2-header">
-
-            <!-- BAR 1: menu utama + language switch -->
-            <div class="shv2-topbar">
-                <div class="container shv2-topbar-inner">
-                    <ul class="shv2-toplinks">
-                        <li><a href="home.html" id="btn-beranda">Beranda</a></li>
-                        <li class="active"><a href="projects.html" id="btn-proyek">Portfolio</a></li>
-                        <li><a href="about.html" id="btn-tentang">Tentang</a></li>
-                        <li><a href="contact.html" id="btn-kontak-1">Kontak</a></li>
-                        <li><a href="service.html">Alur kerja</a></li>
-                        <li><a href="blog.html" id="btn-blog">Blog</a></li>
-                    </ul>
-                    <div class="shv2-lang" id="shv2Lang">
-                        <a href="#" class="shv2-lang-id active" data-lang="id">ID</a>
-                        <a href="#" class="shv2-lang-en" data-lang="en">EN</a>
+        <header id="headertop">
+            <div id="search-body" class="search-body">
+                <form role="search" action="index.php?pages=search" method="post">
+                    <input name="search" type="search" placeholder="type to search" />
+                </form>
+                <a href="javascript:void(0);" class="close"><i class="fas fa-times"></i></a>
+            </div>
+            <!-- begin.navbar header -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-row topbar-alt">
+                <div class="container">
+                    <button class="navbar-toggler finebody" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto ml-0 navbar-mjk-mainmenu">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="home.html" id="btn-beranda">Beranda </a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="projects.html" id="btn-proyek">Portfolio</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="about.html" id="btn-tentang">Tentang</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="contact.html" id="btn-kontak-1">Kontak</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">Alur Kerja</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="blog.html" id="btn-blog">Blog</a>
+                            </li>
+                        </ul>
+                        
+                        <div class="lang-toggle" id="langSwitch">
+                            <span class="lang-toggle-label lang-toggle-label-id active" data-lang="id">ID</span>
+                            <button type="button" class="lang-toggle-switch" id="langToggleBtn" aria-label="Switch language">
+                            <span class="lang-toggle-knob"></span></button>
+                            <span class="lang-toggle-label lang-toggle-label-en" data-lang="en">EN</span>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </nav>
+            <!-- end.navbar header -->
+        </header>
 
             <!-- BAR 2: social + logo + WA -->
             <div class="shv2-midbar">
