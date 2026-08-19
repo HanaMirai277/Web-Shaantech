@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Portfolio | PT Shaantech Mitra Globalindo</title>
+    <title>Website Company Profile | Abata Printing Purwokerto | Shaantech</title>
 
     <meta name="title" content="Web Designer &amp; Web Developer Studio di Jakarta Indonesia | PT Shaantech Mitra Globalindo" />
     <meta name="author" content="Web Designer &amp; Web Developer Studio di Jakarta Indonesia | PT Shaantech Mitra Globalindo" />
@@ -120,7 +120,11 @@
         }
 
         .portfolio-category-bar {
-            display: none;
+            background: #6257e8;
+            border-radius: 6px;
+            margin: 0 auto;
+            padding: 11px 18px;
+            max-width: 100%;
         }
 
         .portfolio-category-bar ul {
@@ -144,62 +148,80 @@
 
         .portfolio-heading {
             text-align: center;
-            padding: 0 0 45px;
+            padding: 0 0 55px;
         }
 
         .portfolio-heading .portfolio-title {
             display: inline-block;
             position: relative;
-            background: linear-gradient(135deg, #6b5dd3 0%, #7c6ee8 100%);
+            background: #6257e8;
             color: #fff;
-            font-size: 36px;
-            line-height: 1.2;
+            font-size: 34px;
+            line-height: 1.15;
             font-weight: 700;
-            padding: 20px 60px 22px;
-            border-radius: 0 0 35px 35px;
+            padding: 17px 40px 20px;
+            border-radius: 0 0 30px 30px;
             margin: 0;
-            box-shadow: 0 4px 15px rgba(107, 93, 211, 0.25);
+        }
+
+        .portfolio-heading .portfolio-title:before,
+        .portfolio-heading .portfolio-title:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 25px;
+            height: 25px;
+            background: #fff;
+        }
+
+        .portfolio-heading .portfolio-title:before {
+            left: -1px;
+            border-radius: 0 25px 0 0;
+        }
+
+        .portfolio-heading .portfolio-title:after {
+            right: -1px;
+            border-radius: 25px 0 0 0;
         }
 
         .portfolio-heading p {
-            max-width: 500px;
-            margin: 20px auto 0;
-            color: #444;
-            font-size: 14px;
-            line-height: 1.5;
+            max-width: 430px;
+            margin: 14px auto 0;
+            color: #333;
+            font-size: 13px;
+            line-height: 1.35;
         }
 
         .portfolio-list {
-            max-width: 1140px;
+            max-width: 900px;
             margin: 0 auto;
         }
 
         .portfolio-item {
-            padding: 0 0 40px;
-            margin-bottom: 40px;
+            padding: 0 0 18px;
             border-bottom: 1px solid #d9d9d9;
         }
 
         .portfolio-item-label {
             display: block;
             color: #6b61e9;
-            font-size: 14px;
-            margin-bottom: 10px;
+            font-size: 12px;
+            margin-bottom: 7px;
             text-transform: uppercase;
         }
 
         .portfolio-item h1 {
-            font-size: 36px;
-            line-height: 1.15;
+            font-size: 25px;
+            line-height: 1.12;
             font-weight: 700;
             color: #222;
-            margin: 0 0 16px;
+            margin: 0 0 12px;
         }
 
         .portfolio-item-grid {
             display: grid;
             grid-template-columns: 46% 54%;
-            gap: 40px;
+            gap: 20px;
             align-items: center;
         }
 
@@ -215,21 +237,21 @@
 
         .portfolio-item-description p {
             color: #555;
-            font-size: 16px;
-            line-height: 1.7;
-            margin: 0 0 20px;
+            font-size: 14px;
+            line-height: 1.65;
+            margin: 0 0 12px;
         }
 
         .portfolio-read-more {
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            padding: 10px 18px;
+            padding: 7px 10px;
             border: 1.5px solid #6257e8;
             border-radius: 6px;
             color: #6257e8;
             background: #fff;
-            font-size: 15px;
+            font-size: 14px;
             line-height: 1;
             text-decoration: none;
             transition: .2s ease;
@@ -259,14 +281,8 @@
             }
 
             .portfolio-heading .portfolio-title {
-                font-size: 28px;
-                padding: 16px 35px 18px;
-                border-radius: 0 0 30px 30px;
-            }
-
-            .portfolio-heading p {
-                font-size: 13px;
-                padding: 0 15px;
+                font-size: 27px;
+                padding: 15px 28px 17px;
             }
 
             .portfolio-item h1 {
@@ -276,6 +292,179 @@
             .portfolio-item-grid {
                 grid-template-columns: 1fr;
                 gap: 16px;
+            }
+        }
+
+        .abata-detail-page {
+            background: #fff;
+            padding: 0 0 25px;
+        }
+
+        .abata-detail-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 34px 0 45px;
+        }
+
+        .abata-detail-head {
+            margin: 0 0 22px;
+        }
+
+        .abata-detail-label {
+            display: block;
+            color: #6b61e9;
+            font-size: 12px;
+            line-height: 1.2;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .abata-detail-title {
+            color: #222;
+            font-size: 29px;
+            line-height: 1.15;
+            font-weight: 700;
+            margin: 0 0 12px;
+            max-width: 760px;
+        }
+
+        .abata-detail-meta {
+            color: #7668e8;
+            font-size: 12px;
+            margin: 0;
+        }
+
+        .abata-detail-hero {
+            width: 100%;
+            margin: 0 0 17px;
+            overflow: hidden;
+        }
+
+        .abata-detail-hero img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .abata-about-row {
+            display: grid;
+            grid-template-columns: 42% 58%;
+            align-items: stretch;
+            margin: 0 0 18px;
+            background: #fff;
+        }
+
+        .abata-about-text {
+            padding: 15px 18px 12px 15px;
+            background: #fafafa;
+        }
+
+        .abata-about-image {
+            overflow: hidden;
+            min-height: 120px;
+        }
+
+        .abata-about-image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            min-height: 120px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .abata-about-kicker {
+            color: #6257e8;
+            font-size: 9px;
+            text-transform: uppercase;
+            margin: 0 0 7px;
+            font-weight: 500;
+        }
+
+        .abata-about-text p {
+            color: #555;
+            font-size: 12px;
+            line-height: 1.55;
+            margin: 0;
+        }
+
+        .abata-detail-content {
+            color: #555;
+        }
+
+        .abata-detail-content p {
+            font-size: 13px;
+            line-height: 1.7;
+            margin: 0 0 18px;
+        }
+
+        .abata-detail-content h2 {
+            color: #222;
+            font-size: 18px;
+            line-height: 1.25;
+            font-weight: 700;
+            margin: 27px 0 10px;
+        }
+
+        .abata-feature-list {
+            margin: 0 0 18px;
+            padding-left: 19px;
+        }
+
+        .abata-feature-list li {
+            color: #555;
+            font-size: 13px;
+            line-height: 1.65;
+            margin-bottom: 3px;
+        }
+
+        .abata-detail-divider {
+            height: 1px;
+            background: #ddd;
+            margin: 24px 0 0;
+        }
+
+        .abata-back {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            margin-top: 7px;
+            padding: 7px 11px;
+            border: 1.5px solid #6257e8;
+            border-radius: 6px;
+            color: #6257e8;
+            background: #fff;
+            text-decoration: none;
+            font-size: 13px;
+            line-height: 1;
+        }
+
+        .abata-back:hover {
+            color: #fff;
+            background: #6257e8;
+            text-decoration: none;
+        }
+
+        @media (max-width: 767.98px) {
+            .abata-detail-wrap {
+                padding: 25px 15px 35px;
+            }
+
+            .abata-detail-title {
+                font-size: 25px;
+            }
+
+            .abata-about-row {
+                grid-template-columns: 1fr;
+            }
+
+            .abata-about-image {
+                order: -1;
+            }
+
+            .abata-detail-content p,
+            .abata-feature-list li {
+                font-size: 13px;
             }
         }
         .shv2-midbar {
@@ -511,6 +700,7 @@
         display: block;
     }
 }
+
     </style>
 
     <!-- Meta Pixel Code -->
@@ -545,56 +735,27 @@
         </div>
 
         <!-- function class active on mainmenu -->
-        <header id="headertop">
-            <div id="search-body" class="search-body">
-                <form role="search" action="index.php?pages=search" method="post">
-                    <input name="search" type="search" placeholder="type to search" />
-                </form>
-                <a href="javascript:void(0);" class="close"><i class="fas fa-times"></i></a>
-            </div>
-            <!-- begin.navbar header -->
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-row topbar-alt">
-                <div class="container">
-                    <button class="navbar-toggler finebody" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="icon-bar top-bar"></span>
-                        <span class="icon-bar middle-bar"></span>
-                        <span class="icon-bar bottom-bar"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav mr-auto ml-0 navbar-mjk-mainmenu">
-                            <li class="nav-item ">
-                                <a class="nav-link" href="home.html" id="btn-beranda">Beranda </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="projects.html" id="btn-proyek">Portfolio</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="about.html" id="btn-tentang">Tentang</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="contact.html" id="btn-kontak-1">Kontak</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="service.html">Alur Kerja</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="blog.html" id="btn-blog">Blog</a>
-                            </li>
-                        </ul>
-                        
-                        <div class="lang-toggle" id="langSwitch">
-                            <span class="lang-toggle-label lang-toggle-label-id active" data-lang="id">ID</span>
-                            <button type="button" class="lang-toggle-switch" id="langToggleBtn" aria-label="Switch language">
-                            <span class="lang-toggle-knob"></span></button>
-                            <span class="lang-toggle-label lang-toggle-label-en" data-lang="en">EN</span>
-                        </div>
+        <header id="headertop" class="shv2-header">
+
+            <!-- BAR 1: menu utama + language switch -->
+            <div class="shv2-topbar">
+                <div class="container shv2-topbar-inner">
+                    <ul class="shv2-toplinks">
+                        <li><a href="home.html" id="btn-beranda">Beranda</a></li>
+                        <li class="active"><a href="projects.html" id="btn-proyek">Portfolio</a></li>
+                        <li><a href="about.html" id="btn-tentang">Tentang</a></li>
+                        <li><a href="contact.html" id="btn-kontak-1">Kontak</a></li>
+                        <li><a href="service.html">Alur kerja</a></li>
+                        <li><a href="blog.html" id="btn-blog">Blog</a></li>
+                    </ul>
+                    <div class="shv2-lang" id="shv2Lang">
+                        <a href="#" class="shv2-lang-id active" data-lang="id">ID</a>
+                        <a href="#" class="shv2-lang-en" data-lang="en">EN</a>
                     </div>
                 </div>
-            </nav>
-            <!-- end.navbar header -->
-        </header>
+            </div>
 
-
+            <!-- BAR 2: social + logo + WA -->
             <div class="shv2-midbar">
                 <div class="container shv2-midbar-inner">
                     <div class="shv2-social">
@@ -617,6 +778,7 @@
                 </div>
             </div>
 
+            <!-- BAR 3: mega menu ungu -->
             <nav class="navbar navbar-expand-lg shv2-megabar">
                 <div class="container shv2-megabar-inner">
                     <button class="navbar-toggler shv2-toggler" type="button" data-toggle="collapse"
@@ -680,39 +842,73 @@
         </header>
 
         <main class="layout-page bg-shadow">
-            <div class="layout-page portfolio-page">
+            <div class="layout-page abata-detail-page">
 
                 <div class="container">
-                    <div class="portfolio-category-bar">
+                    <div class="abata-detail-wrap">
+
+                        <div class="abata-detail-head">
+                            <span class="abata-detail-label">Portfolio</span>
+
+                            <h1 class="abata-detail-title">
+                                Website Company Profile | Abata Printing Purwokerto
+                            </h1>
+
+                            <p class="abata-detail-meta">
+                                Posted on 01/07/2026 by Shaantech
+                            </p>
+                        </div>
+
+                        <div class="abata-detail-hero">
+                            <img
+                                src="userfiles/post/abata.PNG"
+                                alt="Website Company Profile Abata Printing Purwokerto">
+                        </div>
+                        <div class="abata-detail-content">
+
+                            <p>
+                                Shaantech dipercaya untuk merancang dan mengembangkan website company profile bagi salah satu perusahaan percetakan digital di Purwokerto. Proyek ini bertujuan menghadirkan identitas digital yang profesional, memperkuat citra perusahaan, serta mempermudah calon pelanggan memperoleh informasi mengenai layanan percetakan yang ditawarkan. Website dirancang dengan pendekatan modern, responsif, dan berorientasi pada pengalaman pengguna (User Experience), sehingga dapat diakses dengan nyaman melalui desktop maupun perangkat mobile.
+                            </p>
+                            
+                            <p>
+                                Sebelum website dikembangkan, perusahaan menghadapi beberapa kendala, di antaranya:
+                                Belum memiliki media digital yang mampu merepresentasikan profesionalisme perusahaan.
+                                Informasi layanan masih disampaikan secara manual melalui media sosial dan aplikasi pesan instan.
+                            </p>
+                            <p>
+                                Sulit menampilkan portofolio hasil pekerjaan kepada calon pelanggan.
+                                Kurangnya visibilitas di mesin pencari sehingga peluang memperoleh pelanggan baru masih terbatas.
+                                Kami merancang website company profile yang mengutamakan kemudahan navigasi, performa tinggi, dan tampilan visual yang modern.
+                                Solusi yang kami implementasikan meliputi:
+                                Desain antarmuka (UI) yang bersih dan profesional.
+                                Tampilan responsif untuk berbagai ukuran perangkat.
+                                Struktur halaman yang SEO-friendly.
+                                Halaman layanan percetakan yang informatif.
+                                Galeri portofolio hasil cetak.
+                            </p>
+                            <p>
+                                Formulir kontak dan integrasi WhatsApp.Google Maps untuk memudahkan pelanggan menemukan 
+                                lokasi perusahaan.Dashboard CMS agar tim perusahaan dapat memperbarui konten secara mandiri.
+                                Fitur WebsiteWebsite dilengkapi dengan berbagai fitur yang mendukung aktivitas pemasaran digital 
+                                perusahaan, antara lain:Home PageTentang PerusahaanLayanan PercetakanPortofolioGaleri 
+                                ProyekArtikel & InformasiHubungi KamiWhatsApp IntegrationGoogle MapsContact FormSEO 
+                                OptimizationMobile ResponsiveCMS ManagementPendekatan DesainKonsep desain mengusung 
+                                gaya Modern Corporate dengan dominasi warna yang selaras dengan identitas perusahaan. 
+                            </p>
+                            <p>
+                                Tata letak dibuat sederhana namun informatif, sehingga pengunjung dapat menemukan informasi 
+                                penting dengan cepat.Fokus utama desain adalah:Navigasi yang mudah dipahami.Visual berkualitas 
+                                tinggi untuk menampilkan hasil cetak.Call-to-Action yang jelas.Kecepatan akses halaman.Pengalaman 
+                                pengguna yang nyaman di semua perangkat.Hasil yang DicapaiMelalui website baru, perusahaan kini 
+                                memiliki media digital yang mampu mendukung aktivitas pemasaran secara lebih profesional.
+                            </p>
+                        </div>
+
+                        <div class="abata-detail-divider"></div>
+
                     </div>
-
-                    <section class="portfolio-heading">
-                        <h1 class="portfolio-title">Portfolio Kami</h1>
-                        <p>Berikut adalah beberapa proyek yang telah kami kerjakan dengan bangga untuk klien dari berbagai industri</p>
-                    </section>
-
-                    <section class="portfolio-list">
-                        <article class="portfolio-item">
-                            <span class="portfolio-item-label">Portfolio</span>
-                            <h1>Website Company Profile | Abata Printing Purwokerto</h1>
-
-                            <div class="portfolio-item-grid">
-                                <div class="portfolio-item-image">
-                                    <img src="userfiles/post/abata.PNG" alt="Website Company Profile Abata Printing Purwokerto">
-                                </div>
-
-                                <div class="portfolio-item-description">
-                                    <p>Shaantech dipercaya untuk merancang dan mengembangkan website company profile bagi salah satu perusahaan percetakan digital di Purwokerto. Proyek ini bertujuan menghadirkan identitas digital yang profesional, memperkuat citra perusahaan, serta mempermudah calon pelanggan memperoleh informasi mengenai layanan percetakan yang ditawarkan...</p>
-
-                                    <a href="project-abata.html" class="portfolio-read-more" title="Lanjut baca Abata Printing">
-                                        Lanjut baca <i class="fas fa-long-arrow-alt-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </article>
-                    </section>
-
                 </div>
+
             </div>
         </main>
         <footer class="custom-footer">
@@ -847,6 +1043,7 @@
         $(document).ready(function() {
             $('a[href="'+window.location.href+'"]').parent().addClass('active');
             $('ul.dropdown-menu.child_check').each(function() {
+                // Jika tidak ada <li> di dalam <ul>, hapus <ul> tersebut
                 if ($(this).children('li').length === 0) {
                     $(this).remove();
                 }
@@ -876,6 +1073,7 @@
     </script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8FN0PYE12J"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
