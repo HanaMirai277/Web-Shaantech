@@ -91,7 +91,7 @@
 }
 
 main.layout-page {
-  padding-top: 75px;
+  padding-top: 205px;
 }
 
 /* = INFORMASI PEMESANAN
@@ -200,4 +200,20 @@ main.layout-page {
 
 .lang-toggle-switch {
     display: none;
+}
+
+.shv2-midbar {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    z-index: 1025;
+}
+
+.shv2-megabar {
+    position: fixed;
+    top: 145px;
+    left: 0;
+    width: 100%;
+    z-index: 1020;
 }
