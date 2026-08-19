@@ -42,7 +42,7 @@
         href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link media="print" onload="this.onload=null;this.removeAttribute('media');"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet">
     <link media="print" onload="this.onload=null;this.removeAttribute('media');"
         href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
         rel="stylesheet">
@@ -201,9 +201,11 @@
         }
 
         .shv2-midbar {
-            height: 120px;
+            height: 85px;
             background: #fff;
             border-bottom: 1px solid #eee;
+            margin-bottom: 0;
+    padding-bottom: 0;
         }
 
         .shv2-midbar-inner {
@@ -226,34 +228,25 @@
         }
 
         .shv2-social-icons a {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: #7065e8;
-            color: #fff;
+            width: 24px;
+            height: 24px;
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-        }
-
-        .shv2-social-icons a:hover {
-            background: #6257e8;
             color: #fff;
-            text-decoration: none;
         }
 
         .shv2-handle {
             margin-top: 6px;
             color: #7065e8;
             font-size: 14px;
-            font-weight: 700;
+            font-weight: 400;
         }
 
         .shv2-logo {
             display: flex;
             align-items: center;
-            justify-content: center;
         }
 
         .shv2-logo img {
@@ -264,14 +257,21 @@
         .shv2-wa-btn {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            padding: 14px 25px;
-            border-radius: 30px;
+            justify-content: center;
+            gap: 6px;
+            padding: 10px 18px;
+            border-radius: 8px;
             background: #7065e8;
             color: #fff;
             text-decoration: none;
             font-weight: 700;
             font-size: 14px;
+            line-height: 1;
+        }
+
+        .shv2-wa-btn i {
+            font-size: 16px;
+            line-height: 1;
         }
 
         .shv2-wa-btn:hover {
@@ -281,7 +281,7 @@
         }
 
         .shv2-megabar {
-            height: 88px;
+            height: 60px;
             background: #6257e8;
             padding: 0;
         }
@@ -343,6 +343,11 @@
             z-index: 9999;
         }
 
+        #headertop #search-body {
+            visibility: hidden !important;
+            opacity: 0 !important;
+        }
+
         .shv2-meganav .dropdown:hover>.dropdown-menu {
             display: block;
         }
@@ -369,6 +374,7 @@
         }
 
         @media (max-width: 991.98px) {
+
             .shv2-topbar {
                 height: 40px;
             }
@@ -455,6 +461,7 @@
         }
 
         @media (max-width: 575.98px) {
+
             .shv2-toplinks {
                 gap: 10px;
             }
@@ -579,77 +586,32 @@
                 </div>
             </nav>
             <!-- end.navbar header -->
-        </header> <!-- function class active on mainmenu -->
-        <header id="headertop">
-            <div id="search-body" class="search-body">
-                <form role="search" action="index.php?pages=search" method="post">
-                    <input name="search" type="search" placeholder="type to search" />
-                </form>
-                <a href="javascript:void(0);" class="close"><i class="fas fa-times"></i></a>
-            </div>
-            <!-- begin.navbar header -->
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top flex-row topbar-alt">
-                <div class="container">
-                    <button class="navbar-toggler finebody" type="button" data-toggle="collapse"
-                        data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="icon-bar top-bar"></span>
-                        <span class="icon-bar middle-bar"></span>
-                        <span class="icon-bar bottom-bar"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav mr-auto ml-0 navbar-mjk-mainmenu">
-                            <li class="nav-item ">
-                                <a class="nav-link" href="home.html" id="btn-beranda">Beranda </a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="projects.html" id="btn-proyek">Portfolio</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="about.html" id="btn-tentang">Tentang</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="contact.html" id="btn-kontak-1">Kontak</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="service.html">Alur Kerja</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link" href="blog.html" id="btn-blog">Blog</a>
-                            </li>
-                        </ul>
-
-                        <div class="lang-toggle" id="langSwitch">
-                            <span class="lang-toggle-label lang-toggle-label-id active" data-lang="id">ID</span>
-                            <button type="button" class="lang-toggle-switch" id="langToggleBtn"
-                                aria-label="Switch language">
-                                <span class="lang-toggle-knob"></span></button>
-                            <span class="lang-toggle-label lang-toggle-label-en" data-lang="en">EN</span>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-            <!-- end.navbar header -->
         </header>
 
         <div class="shv2-midbar">
             <div class="container shv2-midbar-inner">
                 <div class="shv2-social">
                     <div class="shv2-social-icons">
-                        <a href="https://youtube.com/@shaantech25" target="_blank" rel="noopener"
-                            aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="https://tiktok.com/@shaantech25" target="_blank" rel="noopener" aria-label="TikTok"><i
-                                class="fab fa-tiktok"></i></a>
-                        <a href="https://facebook.com/shaantech25" target="_blank" rel="noopener"
-                            aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://youtube.com/@shaantech25" target="_blank" rel="noopener" aria-label="YouTube">
+                            <img src="themes/front/default/images/icons/icon-yt.svg" alt="YouTube">
+                        </a>
+                        <a href="https://tiktok.com/@shaantech25" target="_blank" rel="noopener" aria-label="TikTok">
+                            <img src="themes/front/default/images/icons/icon-tktok.svg" alt="TikTok">
+                        </a>
+                        <a href="https://facebook.com/shaantech25" target="_blank" rel="noopener" aria-label="Facebook">
+                            <img src="themes/front/default/images/icons/icon-fb.svg" alt="Facebook">
+                        </a>
                         <a href="https://instagram.com/shaantech25" target="_blank" rel="noopener"
-                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            aria-label="Instagram">
+                            <img src="themes/front/default/images/icons/icon-ig.svg" alt="Instagram">
+                        </a>
                     </div>
+
                     <span class="shv2-handle">shaantech25</span>
                 </div>
 
                 <a href="home.html" class="shv2-logo">
-                    <img src="themes/front/default/images/global/img-shaan-logo-black.png" alt="Shaantech"
+                    <img src="themes/globals/favicon/bckup-img-shaan-logo-black.png" alt="Shaantech"
                         title="Shaantech" />
                 </a>
 
@@ -959,99 +921,64 @@
                         </div>
                     </div>
                 </section>
-                </div>
-            <div class="col-12 mb-4">
-                <div class="contact-info-wrapper">
 
-                    <!-- MAP -->
-                    <div class="contact-map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.261907727402!2d109.22001917409315!3d-7.472209673238641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655d928428d481%3A0x9a4f144ad8d806c2!2sShaantech!5e0!3m2!1sid!2sid!4v1723945986542!5m2!1sid!2sid"
-                            allowfullscreen=""
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            title="Lokasi PT Shaantech Mitra Globalindo">
-                        </iframe>
-                    </div>
+                <section class="contact-section">
+                    <div class="contact-section-container">
+                        <div class="contact-info-wrapper">
+                            <div class="contact-map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.261907727402!2d109.22001917409315!3d-7.472209673238641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655d928428d481%3A0x9a4f144ad8d806c2!2sShaantech!5e0!3m2!1sid!2sid!4v1723945986542!5m2!1sid!2sid"
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                    title="Lokasi PT Shaantech Mitra Globalindo">
+                                </iframe>
+                            </div>
 
-                    <!-- INFORMATION -->
-                    <div class="contact-information">
+                            <div class="contact-information">
+                                <div class="social-media-section">
+                                    <h3 class="contact-title">Sosial Media</h3>
 
-                        <!-- SOCIAL MEDIA -->
-                        <div class="social-media-section">
+                                    <div class="social-list">
+                                        <div class="social-item">
+                                            <div class="social-icon">
+                                                <i class="fab fa-youtube"></i>
+                                            </div>
+                                            <span class="social-name">Shaantech25</span>
+                                        </div>
 
-                            <h3 class="contact-title">
-                                Sosial Media
-                            </h3>
+                                        <div class="social-item">
+                                            <div class="social-icon">
+                                                <i class="fab fa-tiktok"></i>
+                                            </div>
+                                            <span class="social-name">Shaantech25</span>
+                                        </div>
 
-                            <div class="social-list">
+                                        <div class="social-item">
+                                            <div class="social-icon">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </div>
+                                            <span class="social-name">Shaantech25</span>
+                                        </div>
 
-                                <!-- YouTube -->
-                                <div class="social-item">
-                                    <div class="social-icon">
-                                        <i class="fab fa-youtube"></i>
+                                        <div class="social-item">
+                                            <div class="social-icon">
+                                                <i class="fab fa-instagram"></i>
+                                            </div>
+                                            <span class="social-name">Shaantech25</span>
+                                        </div>
                                     </div>
 
-                                    <span class="social-name">
-                                        Shaantech25
-                                    </span>
-                                </div>
-
-                                <!-- TikTok -->
-                                <div class="social-item">
-                                    <div class="social-icon">
-                                        <i class="fab fa-tiktok"></i>
+                                    <div class="email-section">
+                                        <h3 class="contact-title">Email</h3>
+                                        <p>
+                                            <a href="mailto:shaantechmitraglobalindo@gmail.com">
+                                                shaantechmitraglobalindo@gmail.com
+                                            </a>
+                                        </p>
                                     </div>
-
-                                    <span class="social-name">
-                                        Shaantech25
-                                    </span>
                                 </div>
-
-                                <!-- Facebook -->
-                                <div class="social-item">
-                                    <div class="social-icon">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </div>
-
-                                    <span class="social-name">
-                                        Shaantech25
-                                    </span>
-                                </div>
-
-                                <!-- Instagram -->
-                                <div class="social-item">
-                                    <div class="social-icon">
-                                        <i class="fab fa-instagram"></i>
-                                    </div>
-
-                                    <span class="social-name">
-                                        Shaantech25
-                                    </span>
-                                </div>
-
                             </div>
                         </div>
-
-                        <!-- EMAIL -->
-                        <div class="email-section">
-
-                            <h3 class="contact-title">
-                                Email
-                            </h3>
-
-                            <p>
-                                <a href="mailto:shaantechmitraglobalindo@gmail.com">
-                                    shaantechmitraglobalindo@gmail.com
-                                </a>
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
+                </section>
 
             </div>
         </main>
@@ -1064,7 +991,8 @@
                             <h4>PT. Shaantech Mitra Globalindo</h4>
                             <div class="footer-line"></div>
                             <div class="footer-brand" style="margin-bottom: 20px;">
-                                <img src="themes/globals/favicon/bckup-img-shaan-logo-black.png" width="200px" alt="Logo Shaantech" style="max-width: 100%; height: auto;">
+                                <img src="themes/globals/favicon/bckup-img-shaan-logo-black.png" width="200px"
+                                    alt="Logo Shaantech" style="max-width: 100%; height: auto;">
                             </div>
                             <p>
                                 <strong>Didirikan pada tahun 2021,</strong>
@@ -1094,8 +1022,7 @@
                                     <i class="fab fa-whatsapp"></i>
                                     <span><a target="_blank"
                                             href="https://wa.me/+6285186868807?text=Halo PT Shaantech Mitra Globalindo, saya hendak bertanya mengenai website & mobile apps development"
-                                            title="">+62 851-8686-8807</a>
-                                    </span>
+                                            title="">+62 851-8686-8807</a></span>
                                 </div>
                             </div>
                         </div>
@@ -1109,6 +1036,7 @@
                 </p>
             </div>
         </footer>
+
         <a onclick="topFunction()" id="backtotop" title="Go to top"><i class="fas fa-chevron-up"></i></a>
     </div>
     <!-- begin jquery -->
