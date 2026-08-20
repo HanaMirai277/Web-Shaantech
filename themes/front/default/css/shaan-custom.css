@@ -217,3 +217,7 @@ main.layout-page {
     width: 100%;
     z-index: 1020;
 }
+
+.section-top .banner-box-clip {
+    height: calc(100vh - 156px);
+}
