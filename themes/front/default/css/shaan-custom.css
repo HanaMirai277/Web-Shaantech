@@ -218,6 +218,102 @@ main.layout-page {
     z-index: 1020;
 }
 
-.section-top .banner-box-clip {
-    height: calc(100vh - 156px);
+/* ==========================================================================
+   MOBILE RESPONSIVE FIX (LOGO, WHATSAPP & EMAIL)
+   ========================================================================== */
+@media (max-width: 991.98px) {
+
+    /* 1. Midbar (Logo & WA) ditumpuk di atas megabar (Hamburger) di top: 145px */
+    .shv2-midbar {
+        top: 145px !important;
+        height: 115px !important;
+        background: transparent !important;
+        z-index: 1030 !important;
+        pointer-events: none !important;
+    }
+
+    .shv2-midbar-inner {
+        display: block !important;
+        height: 100% !important;
+        width: 100% !important;
+        position: relative !important;
+        padding: 0 15px !important;
+    }
+
+    /* 2. Logo Shaantech — tengah, baris 1 */
+    .shv2-logo {
+        position: absolute !important;
+        top: 15px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        pointer-events: auto !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    .shv2-logo img {
+        max-width: 130px !important;
+    }
+
+    /* 3. Tombol WhatsApp — kanan, baris 1 */
+    .shv2-wa-btn {
+        position: absolute !important;
+        top: 11px !important;
+        right: 15px !important;
+        pointer-events: auto !important;
+        display: inline-flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    /* Sembunyikan social icons & handle di mobile */
+    .shv2-social, .shv2-handle {
+        display: none !important;
+    }
+
+    /* 4. Megabar (Hamburger) — background putih, tinggi diperbesar */
+    .shv2-megabar {
+        background: #ffffff !important;
+        height: 115px !important;
+        min-height: 115px !important;
+    }
+
+    .shv2-megabar-inner {
+        display: block !important;
+        position: relative !important;
+        height: 100% !important;
+        padding: 0 15px !important;
+    }
+
+    /* 5. Hamburger — kotak ungu, kiri, baris 1 */
+    .shv2-toggler {
+        position: absolute !important;
+        top: 13px !important;
+        left: 15px !important;
+        background: #7065e8 !important;
+        border-radius: 8px !important;
+        padding: 6px 12px !important;
+        display: inline-block !important;
+        color: #ffffff !important;
+        margin: 0 !important;
+    }
+
+    /* 6. Email — baris 2, kotak ungu lebar sesuai screenshot referensi */
+    .shv2-midbar::after {
+        content: "shaantechmitraglobalindo@gmail.com";
+        position: absolute;
+        top: 65px;
+        left: 15px;
+        right: 15px;
+        background: #7065e8;
+        color: #ffffff;
+        padding: 8px 10px;
+        border-radius: 8px;
+        text-align: center;
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        pointer-events: auto;
+    }
 }

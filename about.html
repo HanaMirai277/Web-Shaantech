@@ -868,14 +868,19 @@
             /* =====================================================
                 HEADER
                 ===================================================== */
-
-            .shv2-social {
-                display: none;
+            .topbar-alt.fixed-top {
+                position: relative !important;
+                top: auto !important;
+                right: auto !important;
+                left: auto !important;
             }
 
             .shv2-midbar {
+                position: fixed;
+                z-index: 1;
                 height: auto;
                 padding: 10px 0;
+                margin-top: 50px;
             }
 
             .shv2-midbar-inner {
@@ -883,6 +888,10 @@
                 align-items: center !important;
                 justify-content: space-between !important;
                 padding: 0 15px;
+            }
+
+            .shv2-social {
+                display: none;
             }
 
             .shv2-toggler {
@@ -945,7 +954,7 @@
                 padding: 12px 10px;
                 text-align: center;
                 border-radius: 10px;
-                margin-top: 8px;
+                margin-top: 26px;
             }
 
             .mobile-email-bar a {
@@ -959,20 +968,18 @@
             /* =====================================================
                 HERO
                 ===================================================== */
-
             .banner-box-hero {
                 width: 100%;
                 height: 230px;
-                min-height: 0;
-                background-size: contain;
-                background-position: center center;
+                min-height: 0 !important;
+                background-size: 100% auto !important;
+                background-position: center top !important;
                 background-repeat: no-repeat;
             }
 
             /* =====================================================
                 TENTANG KAMI
                 ===================================================== */
-
             .quotes-box {
                 display: flex;
                 flex-direction: column;
@@ -995,7 +1002,7 @@
                 max-width: 100%;
                 flex: 0 0 100%;
                 padding: 0 !important;
-                margin-top: 35px !important;
+                margin-top: 0px !important;
                 margin-bottom: 10px !important;
             }
 
