@@ -317,3 +317,21 @@ main.layout-page {
         pointer-events: auto;
     }
 }
+
+ @media (max-width: 767.98px) {
+
+        html,
+        body {
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .lang-toggle {
+            display: none !important;
+        }
+    }
