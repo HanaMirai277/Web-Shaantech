@@ -221,192 +221,208 @@ main.layout-page {
 /* ==========================================================================
    MOBILE RESPONSIVE FIX (LOGO, WHATSAPP & EMAIL)
    ========================================================================== */
+/* ==========================================================================
+   MOBILE RESPONSIVE FIX (LOGO, WHATSAPP, HAMBURGER & EMAIL)
+   ========================================================================== */
 @media (max-width: 991.98px) {
 
-    /* 1. Midbar (Logo & WA) ditumpuk di atas megabar (Hamburger) di top: 145px */
+    /* 1. Midbar — sekarang jadi satu baris flex: hamburger, logo, WA button */
     .shv2-midbar {
-        top: 110px;
-        height: 115px;
-        background: transparent;
+        position: fixed;
+        top: 100px;              /* sesuaikan sama tinggi navy bar (topbar-alt) */
+        left: 0;
+        width: 100%;
+        height: auto;
+        background: #ffffff;
         z-index: 1030;
-        pointer-events: none;
     }
 
     .shv2-midbar-inner {
-        display: block !important;
-        height: 100% !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        height: 60px !important;
         width: 100% !important;
-        position: relative !important;
         padding: 0 15px !important;
     }
 
-    /* 2. Logo Shaantech — tengah, baris 1 */
+    /* 2. Hamburger — sekarang ikut flex normal, gak absolute lagi */
+    .shv2-toggler {
+        position: static !important;
+        background: #7065e8 !important;
+        border-radius: 8px !important;
+        padding: 8px 12px !important;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff !important;
+        margin: 0 !important;
+        order: 1;
+        flex-shrink: 0;
+    }
+
+    /* 3. Logo Shaantech — tengah, ikut flex */
     .shv2-logo {
-        position: absolute !important;
-        top: 15px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        pointer-events: auto !important;
+        position: static !important;
         display: block !important;
         visibility: visible !important;
         opacity: 1 !important;
+        order: 2;
     }
 
     .shv2-logo img {
         max-width: 130px !important;
     }
 
-    /* 3. Tombol WhatsApp — kanan, baris 1 */
+    /* 4. Tombol WhatsApp — kanan, ikut flex */
     .shv2-wa-btn {
-        position: absolute !important;
-        top: 11px !important;
-        right: 15px !important;
-        pointer-events: auto !important;
+        position: static !important;
         display: inline-flex !important;
         visibility: visible !important;
         opacity: 1 !important;
+        order: 3;
+        flex-shrink: 0;
     }
 
     /* Sembunyikan social icons & handle di mobile */
-    .shv2-social, .shv2-handle {
+    .shv2-social,
+    .shv2-handle {
         display: none !important;
     }
 
-    /* 4. Megabar (Hamburger) — background putih, tinggi diperbesar */
-    .shv2-megabar {
-        background: #ffffff !important;
-        height: 115px !important;
-        min-height: 115px !important;
-    }
-
-    .shv2-megabar-inner {
-        display: block !important;
-        position: relative !important;
-        height: 100% !important;
-        padding: 0 15px !important;
-    }
-
-    /* 5. Hamburger — kotak ungu, kiri, baris 1 */
-    .shv2-toggler {
-        position: absolute !important;
-        top: 13px !important;
-        left: 15px !important;
-        background: #7065e8 !important;
-        border-radius: 8px !important;
-        padding: 6px 12px !important;
-        display: inline-block !important;
-        color: #ffffff !important;
-        margin: 0 !important;
-    }
-
-    /* 6. Email — baris 2, kotak ungu lebar sesuai screenshot referensi */
+    /* 5. Email — row kedua, di bawah row logo */
     .shv2-midbar::after {
         content: "shaantechmitraglobalindo@gmail.com";
-        position: absolute;
-        top: 65px;
-        left: 15px;
-        right: 15px;
+        display: block;
         background: #7065e8;
         color: #ffffff;
         padding: 8px 10px;
+        margin: 0 15px 10px;
         border-radius: 8px;
         text-align: center;
         font-size: 13px;
         font-weight: 500;
         letter-spacing: 0.5px;
-        pointer-events: auto;
+    }
+
+    /* 6. Megabar lama — sekarang cuma wadah dropdown menu, disembunyikan bar-nya */
+    .shv2-megabar {
+        display: none;
+    }
+
+    /* 7. Dropdown menu WEBSITE/APLIKASI/dst — muncul fixed di bawah midbar saat toggler diklik */
+    #shv2MegaCollapse {
+        position: fixed;
+        top: 170px;               /* sesuaikan: tinggi navy(100) + midbar 2 baris(~70) */
+        left: 0;
+        width: 100%;
+        max-height: calc(100vh - 170px);
+        overflow-y: auto;
+        z-index: 1029;
+        background: #6257e8;
+        display: none;
+    }
+
+    #shv2MegaCollapse.show {
+        display: block;
+    }
+
+    /* 8. Dorong konten hero turun sejumlah tinggi navy + midbar 2 baris */
+    main.layout-page {
+        padding-top: 170px;
     }
 }
 
- @media (max-width: 767.98px) {
+@media (max-width: 767.98px) {
 
-        html,
-        body {
-            width: 100%;
-            overflow-x: hidden;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 100%;
-        }
-
-        .lang-toggle {
-            display: none !important;
-        }
-
-        .whatsapp-box {
-            display: none !important;
-        }
-
-        .custom-footer {
-            width: 100%;
-            overflow: hidden;
-        }
-
-        .footer-main {
-            padding: 35px 20px 10px;
-        }
-
-        .footer-main .row {
-            margin-left: 0;
-            margin-right: 0;
-        }
-
-        .footer-left,
-        .footer-right {
-            width: 100%;
-            max-width: 100%;
-            flex: 0 0 100%;
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-            margin-bottom: 30px;
-        }
-
-        .custom-footer h4 {
-            font-size: 20px;
-            line-height: 1.4;
-        }
-
-        .footer-brand img {
-            width: 180px !important;
-            max-width: 100%;
-        }
-
-        .footer-left p,
-        .footer-info p {
-            font-size: 14px;
-            line-height: 1.7;
-        }
-
-        .footer-right {
-            padding-left: 0 !important;
-        }
-
-        .footer-info {
-            margin-bottom: 25px;
-        }
-
-        .contact-wa {
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .contact-wa i {
-            font-size: 25px;
-        }
-
-        .contact-wa span a {
-            font-size: 15px;
-            letter-spacing: 1px;
-        }
-
-        .footer-copyright {
-            padding: 13px 15px;
-        }
-
-        .footer-copyright p {
-            font-size: 12px;
-            line-height: 1.5;
-        }
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
     }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .lang-toggle {
+        display: none !important;
+    }
+
+    .whatsapp-box {
+        display: none !important;
+    }
+
+    .custom-footer {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .footer-main {
+        padding: 35px 20px 10px;
+    }
+
+    .footer-main .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-bottom: 30px;
+    }
+
+    .custom-footer h4 {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .footer-brand img {
+        width: 180px !important;
+        max-width: 100%;
+    }
+
+    .footer-left p,
+    .footer-info p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .footer-right {
+        padding-left: 0 !important;
+    }
+
+    .footer-info {
+        margin-bottom: 25px;
+    }
+
+    .contact-wa {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .contact-wa i {
+        font-size: 25px;
+    }
+
+    .contact-wa span a {
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .footer-copyright {
+        padding: 13px 15px;
+    }
+
+    .footer-copyright p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+}
