@@ -849,6 +849,7 @@
             ========================================================= */
 
         @media (max-width: 767.98px) {
+
             html,
             body {
                 width: 100%;
@@ -868,103 +869,91 @@
                 HEADER
                 ===================================================== */
 
-            .shv2-midbar {
-                height: 75px;
-            }
-
-            .shv2-midbar-inner {
-                padding: 0 15px;
-                display: flex;
-                justify-content: space-between;
-            }
-
             .shv2-social {
                 display: none;
             }
 
-            .shv2-logo {
-                margin: 0 auto;
-            }
-
-            .shv2-logo img {
-                width: auto;
-                max-width: 125px;
-            }
-
-            .shv2-wa-btn {
-                padding: 9px 11px;
-                border-radius: 8px;
-                font-size: 11px;
-                white-space: nowrap;
-            }
-
-            .shv2-wa-btn span {
-                display: none;
-            }
-
-            .shv2-wa-btn i {
-                font-size: 16px;
-            }
-
-            .shv2-megabar {
+            .shv2-midbar {
                 height: auto;
-                min-height: 55px;
+                padding: 10px 0;
             }
 
-            .shv2-megabar-inner {
-                min-height: 55px;
+            .shv2-midbar-inner {
+                display: flex !important;
+                align-items: center !important;
+                justify-content: space-between !important;
                 padding: 0 15px;
-                justify-content: flex-end;
             }
 
             .shv2-toggler {
-                display: block;
-                border: none;
-                outline: none;
-                background: transparent;
-                color: #ffffff;
-                font-size: 24px;
-                padding: 10px 5px;
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;
+                background: #6258e8 !important;
+                color: #fff !important;
+                border-radius: 12px;
+                font-size: 20px;
+                padding: 0;
+                margin: 0;
             }
 
-            .shv2-megabar .navbar-collapse {
+            .shv2-logo {
+                margin: 0 !important;
+            }
+
+            .shv2-logo img {
+                max-width: 140px !important;
+                height: auto;
+            }
+
+            .shv2-wa-btn {
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                width: 48px;
+                height: 48px;
+                padding: 0 !important;
+                border-radius: 12px;
+                background: #6258e8 !important;
+            }
+
+            .shv2-wa-btn i {
+                font-size: 24px !important;
+                margin: 0;
+            }
+
+            .shv2-wa-btn span {
+                display: none !important;
+            }
+
+            .shv2-megabar {
+                min-height: 0 !important;
+                background: transparent !important;
+                padding: 0 !important;
+            }
+
+            .shv2-megabar-inner {
+                min-height: 0 !important;
+                flex-direction: column;
+            }
+
+            .mobile-email-bar {
                 width: 100%;
                 background: #6258e8;
+                padding: 12px 10px;
+                text-align: center;
+                border-radius: 10px;
+                margin-top: 8px;
             }
 
-            .shv2-meganav {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                height: auto;
-                padding: 0;
-            }
-
-            .shv2-meganav>li {
-                width: 100%;
-                height: auto;
-                display: block;
-            }
-
-            .shv2-meganav>li>a {
-                width: 100%;
-                min-height: 48px;
-                padding: 13px 18px;
-                font-size: 14px;
-            }
-
-            .shv2-meganav .dropdown-menu {
-                position: static;
-                width: 100%;
-                min-width: 0;
-                box-shadow: none;
-                border-radius: 0;
-            }
-
-            .shv2-meganav .dropdown-menu .dropdown-item {
-                padding: 11px 25px;
+            .mobile-email-bar a {
+                color: #ffffff;
+                font-weight: 400;
                 font-size: 13px;
-                white-space: normal;
+                text-decoration: none;
+                word-break: break-all;
             }
 
             /* =====================================================
@@ -979,7 +968,6 @@
                 background-position: center center;
                 background-repeat: no-repeat;
             }
-
 
             /* =====================================================
                 TENTANG KAMI
@@ -1504,9 +1492,15 @@
                             <img src="themes/front/default/images/icons/icon-ig.svg" alt="Instagram">
                         </a>
                     </div>
-
                     <span class="shv2-handle">shaantech25</span>
                 </div>
+
+                <!-- Tombol Toggler/Hamburger Menu untuk Mobile -->
+                <button class="shv2-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#shv2MegaCollapse" aria-controls="shv2MegaCollapse" aria-expanded="false"
+                    aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
 
                 <a href="home.html" class="shv2-logo">
                     <img src="themes/globals/favicon/bckup-img-shaan-logo-black.png" alt="Shaantech"
@@ -1516,16 +1510,13 @@
                 <a href="https://wa.me/+6285186868807" target="_blank" rel="noopener" class="shv2-wa-btn">
                     <i class="fab fa-whatsapp"></i> <span>YUK! KONSULTASI</span>
                 </a>
+
             </div>
         </div>
 
         <nav class="navbar navbar-expand-lg shv2-megabar">
-            <div class="container shv2-megabar-inner">
-                <button class="navbar-toggler shv2-toggler" type="button" data-toggle="collapse"
-                    data-target="#shv2MegaCollapse" aria-controls="shv2MegaCollapse" aria-expanded="false"
-                    aria-label="Toggle menu">
-                    <i class="fas fa-bars"></i>
-                </button>
+            <div class="container shv2-megabar-inner p-0">
+
                 <div class="collapse navbar-collapse" id="shv2MegaCollapse">
                     <ul class="shv2-meganav">
                         <li class="dropdown">
@@ -1587,8 +1578,14 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- Banner Email khusus Mobile -->
+                <div class="mobile-email-bar d-lg-none">
+                    <a href="mailto:shaantechmitraglobalindo@gmail.com">shaantechmitraglobalindo@gmail.com</a>
+                </div>
             </div>
         </nav>
+
         </header>
 
         <main class="layout-page bg-shadow">
