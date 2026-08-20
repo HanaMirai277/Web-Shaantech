@@ -334,4 +334,79 @@ main.layout-page {
         .lang-toggle {
             display: none !important;
         }
+
+        .whatsapp-box {
+            display: none !important;
+        }
+
+        .custom-footer {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .footer-main {
+            padding: 35px 20px 10px;
+        }
+
+        .footer-main .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .footer-left,
+        .footer-right {
+            width: 100%;
+            max-width: 100%;
+            flex: 0 0 100%;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-bottom: 30px;
+        }
+
+        .custom-footer h4 {
+            font-size: 20px;
+            line-height: 1.4;
+        }
+
+        .footer-brand img {
+            width: 180px !important;
+            max-width: 100%;
+        }
+
+        .footer-left p,
+        .footer-info p {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .footer-right {
+            padding-left: 0 !important;
+        }
+
+        .footer-info {
+            margin-bottom: 25px;
+        }
+
+        .contact-wa {
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .contact-wa i {
+            font-size: 25px;
+        }
+
+        .contact-wa span a {
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        .footer-copyright {
+            padding: 13px 15px;
+        }
+
+        .footer-copyright p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
     }
