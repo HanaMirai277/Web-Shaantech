@@ -2322,3 +2322,88 @@
     font-size: 14px;
     font-weight: 300;
 }
+/* =========================================
+   RESPONSIVE HOME - MOBILE
+   ========================================= */
+
+@media (max-width: 767px) {
+
+    /* HOME - MITRA TEKNOLOGI */
+    .mitra-teknologi {
+        padding: 35px 15px 20px;
+    }
+
+    .title-mitra-teknologi h3 {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .mitra-teknologi p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    /* HOME - CARD LAYANAN */
+    .content-beranda {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 10px 15px 45px;
+    }
+
+    .content-beranda > div {
+        padding: 12px 15px 18px;
+    }
+
+    .content-beranda > div h3 {
+        font-size: 19px;
+    }
+
+    .content-beranda > div img {
+        height: auto;
+        max-height: 250px;
+    }
+
+    .content-beranda > div p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+
+    /* HOME - MENGAPA BISNIS */
+    .mengapa-bisnis {
+        min-height: auto;
+        padding: 35px 15px 30px;
+    }
+
+    .title-mengapa-bisnis h3 {
+        font-size: 28px;
+        line-height: 1.15;
+    }
+
+
+    /* HOME - CONTACT */
+    .contact-info-wrapper {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+    @media (max-width: 767px) {
+
+    /* FOOTER MOBILE */
+    .footer-bottom {
+        padding: 25px 15px 20px;
+    }
+
+    .footer-bottom h4 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .footer-bottom p,
+    .footer-bottom a {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+}
+}
