@@ -225,11 +225,11 @@ main.layout-page {
 
     /* 1. Midbar (Logo & WA) ditumpuk di atas megabar (Hamburger) di top: 145px */
     .shv2-midbar {
-        top: 145px !important;
-        height: 115px !important;
-        background: transparent !important;
-        z-index: 1030 !important;
-        pointer-events: none !important;
+        top: 110px;
+        height: 115px;
+        background: transparent;
+        z-index: 1030;
+        pointer-events: none;
     }
 
     .shv2-midbar-inner {
