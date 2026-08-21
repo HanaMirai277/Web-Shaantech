@@ -226,15 +226,16 @@ main.layout-page {
    ========================================================================== */
 @media (max-width: 991.98px) {
 
-    /* 1. Midbar — sekarang jadi satu baris flex: hamburger, logo, WA button */
+    /* 1. Midbar — satu baris flex: hamburger, logo, WA button */
     .shv2-midbar {
         position: fixed;
-        top: 100px;              /* sesuaikan sama tinggi navy bar (topbar-alt) */
+        top: 100px;
         left: 0;
         width: 100%;
         height: auto;
         background: #ffffff;
         z-index: 1030;
+        padding-bottom: 10px;
     }
 
     .shv2-midbar-inner {
@@ -247,7 +248,7 @@ main.layout-page {
         padding: 0 15px !important;
     }
 
-    /* 2. Hamburger — sekarang ikut flex normal, gak absolute lagi */
+    /* 2. Hamburger — ikut flex normal */
     .shv2-toggler {
         position: static !important;
         background: #7065e8 !important;
@@ -262,7 +263,7 @@ main.layout-page {
         flex-shrink: 0;
     }
 
-    /* 3. Logo Shaantech — tengah, ikut flex */
+    /* 3. Logo Shaantech — tengah */
     .shv2-logo {
         position: static !important;
         display: block !important;
@@ -275,7 +276,7 @@ main.layout-page {
         max-width: 130px !important;
     }
 
-    /* 4. Tombol WhatsApp — kanan, ikut flex */
+    /* 4. Tombol WhatsApp — kanan */
     .shv2-wa-btn {
         position: static !important;
         display: inline-flex !important;
@@ -285,20 +286,19 @@ main.layout-page {
         flex-shrink: 0;
     }
 
-    /* Sembunyikan social icons & handle di mobile */
     .shv2-social,
     .shv2-handle {
         display: none !important;
     }
 
-    /* 5. Email — row kedua, di bawah row logo */
+    /* 5. Email — row kedua */
     .shv2-midbar::after {
         content: "shaantechmitraglobalindo@gmail.com";
         display: block;
         background: #7065e8;
         color: #ffffff;
         padding: 8px 10px;
-        margin: 0 15px 10px;
+        margin: 0 15px;
         border-radius: 8px;
         text-align: center;
         font-size: 13px;
@@ -306,8 +306,9 @@ main.layout-page {
         letter-spacing: 0.5px;
     }
 
-    /* 6. Megabar lama — sekarang cuma wadah dropdown menu, disembunyikan bar-nya */
+    /* 6. PENTING: jangan display:none — #shv2MegaCollapse ada DI DALAM elemen ini */
     .shv2-megabar {
+        position: static !important;
         height: 0 !important;
         min-height: 0 !important;
         overflow: visible !important;
@@ -320,13 +321,13 @@ main.layout-page {
         padding: 0 !important;
     }
 
-    /* 7. Dropdown menu WEBSITE/APLIKASI/dst — muncul fixed di bawah midbar saat toggler diklik */
+    /* 7. Dropdown menu — muncul fixed saat toggler diklik */
     #shv2MegaCollapse {
         position: fixed;
-        top: 195px;          
+        top: 230px;
         left: 0;
         width: 100%;
-        max-height: calc(100vh - 195px);
+        max-height: calc(100vh - 230px);
         overflow-y: auto;
         z-index: 1029;
         background: #6257e8;
@@ -337,9 +338,9 @@ main.layout-page {
         display: block;
     }
 
-    /* 8. Dorong konten hero turun sejumlah tinggi navy + midbar 2 baris */
+    /* 8. Dorong konten utama turun */
     main.layout-page {
-        padding-top: 195px;
+        padding-top: 230px;
     }
 }
 
