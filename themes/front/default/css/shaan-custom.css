@@ -308,16 +308,25 @@ main.layout-page {
 
     /* 6. Megabar lama — sekarang cuma wadah dropdown menu, disembunyikan bar-nya */
     .shv2-megabar {
-        display: none;
+        height: 0 !important;
+        min-height: 0 !important;
+        overflow: visible !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    .shv2-megabar-inner {
+        padding: 0 !important;
     }
 
     /* 7. Dropdown menu WEBSITE/APLIKASI/dst — muncul fixed di bawah midbar saat toggler diklik */
     #shv2MegaCollapse {
         position: fixed;
-        top: 170px;               /* sesuaikan: tinggi navy(100) + midbar 2 baris(~70) */
+        top: 200px;          
         left: 0;
         width: 100%;
-        max-height: calc(100vh - 170px);
+        max-height: calc(100vh - 200px);
         overflow-y: auto;
         z-index: 1029;
         background: #6257e8;
